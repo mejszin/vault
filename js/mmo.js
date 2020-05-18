@@ -31,11 +31,7 @@ function setup() {
 	if (name == null) {
 		name = "Null";
 	}
-	player = new Player(name, random(width), random(height), createVector(0, 0));
-}
-
-function getName() {
-	return name;
+	player = new Player(name, random(width), random(height), createVector(0, 0), true);
 }
 
 function draw() {
@@ -58,14 +54,14 @@ function gotData(data) {
 	var names = Object.keys(records);
 	for (var i = 0; i < names.length; i++) {
 		var name = names[i];
-		if (name != player.getName) {
+		if (name != player.name) {
 			var x = records[name].x;
 			var y = records[name].y;
 			var dir = createVector(records[name].dir[0], records[name].dir[1]);
 			var time = records[name].time;
 			// 10 minute timeout
 			if (firebase.database.ServerValue.TIMESTAMP - time < 600000) {
-				ghosts.push(new Player(name, x, y, dir));
+				ghosts.push(new Player(name, x, y, dir, false));
 			}
 		}
 	};
