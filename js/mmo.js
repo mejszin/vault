@@ -66,7 +66,7 @@ function gotData(data) {
 				ghosts.push(new Player(name, x, y, dir, false));
 			}
 		} else {
-			player.latestTime = records[name].time
+			player.latestTime = records[name].lastAction;
 		}
 	};
 	draw();

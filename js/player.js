@@ -6,7 +6,9 @@ class Player {
     this.dir = dir;
     this.is_player = is_player;
     this.latestTime = Infinity;
-    this.submit();
+    if (this.is_player) {
+      this.submit();
+    }
   }
 
   move(x, y) {
@@ -34,10 +36,10 @@ class Player {
 
   submit() {
   	var data = {
-		x: this.x,
-		y: this.y,
-		dir: [this.dir.x, this.dir.y],
-    lastAction: firebase.database.ServerValue.TIMESTAMP
+  		x: this.x,
+  		y: this.y,
+  		dir: [this.dir.x, this.dir.y],
+      lastAction: firebase.database.ServerValue.TIMESTAMP
   	};
   	var ref = database.ref('mmo/players');
   	ref.child(this.name).set(data, this.gotData);
