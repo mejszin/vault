@@ -62,7 +62,11 @@ function gotData(data) {
 			var x = records[name].x;
 			var y = records[name].y;
 			var dir = createVector(records[name].dir[0], records[name].dir[1]);
-			ghosts.push(new Player(name, x, y, dir));
+			var time = records[name].time;
+			// 10 minute timeout
+			if (firebase.database.ServerValue.TIMESTAMP - time < 600000) {
+				ghosts.push(new Player(name, x, y, dir));
+			}
 		}
 	};
 	draw();

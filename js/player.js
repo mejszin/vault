@@ -24,7 +24,8 @@ class Player {
   	var data = {
 		x: this.x,
 		y: this.y,
-		dir: [this.dir.x, this.dir.y]
+		dir: [this.dir.x, this.dir.y],
+    time: firebase.database.ServerValue.TIMESTAMP
   	};
   	var ref = database.ref('mmo/players');
   	ref.child(this.name).set(data, this.gotData);
