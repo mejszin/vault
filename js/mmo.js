@@ -1,7 +1,9 @@
 let canvas;
+let tilemap;
 let player;
 let ghosts = [];
 let database;
+let is_moving = false;
 
 function setup() {
 	// Firebase
@@ -22,54 +24,71 @@ function setup() {
 	var ref = database.ref('mmo/players');
   	ref.on('value', gotData, errData);
 	// Canvas
-	canvas = createCanvas(640, 360);
+	canvas = createCanvas(16 * TILESIZE, 12 * TILESIZE);
 	canvas.parent('wrapper');
-	canvas.mouseClicked(move);
-	noLoop();
+	canvas.mousePressed(mouseDown);
+	canvas.mouseReleased(mouseUp);
+	textAlign(CENTER, CENTER);
+	frameRate(10);
+	// Map
+	tilemap = new TileMap();
 	// Player
 	var name = getURLParams().name;
 	if (name == null) {
 		name = "Null";
 	}
-	player = new Player(name, random(width), random(height), createVector(0, 0), true);
+	player = new Player(name, width/2, height/2, createVector(0, 0), true);
 }
 
 function draw() {
-	background(100);
+	background(0);
+	// Move
+	if (is_moving) {
+		move();
+	}
+	// Display map
+	tilemap.display();
 	// Display player
 	player.display();
 	// Display ghosts
-	for (var i = 0; i < ghosts.length; i++) {
-		ghosts[i].display();
-	};
+	for (var k = 0; k < ghosts.length; k++) {
+		ghosts[k].display();
+	}
 }
 
 function move() {
 	player.move(mouseX, mouseY);
 }
 
+function mouseDown() {
+	is_moving = true;
+}
+
+function mouseUp() {
+	is_moving = false;
+}
+
 function gotData(data) {
 	ghosts = [];
 	var records = data.val();
 	var names = Object.keys(records);
-	for (var i = 0; i < names.length; i++) {
-		var name = names[i];
+	for (var k = 0; k < names.length; k++) {
+		var name = names[k];
 		if (name != player.name) {
 			var x = records[name].x;
 			var y = records[name].y;
 			var dir = createVector(records[name].dir[0], records[name].dir[1]);
 			var time = records[name].lastAction;
 			// 10 minute timeout
-			var timeout = 0.1 * 60 * 1000;
-			print(player.latestTime, time, player.latestTime - time, timeout);
+			var timeout = 10 * 60 * 1000;
 			if (player.latestTime - time < timeout) {
 				ghosts.push(new Player(name, x, y, dir, false));
 			}
 		} else {
 			player.latestTime = records[name].lastAction;
 		}
-	};
-	draw();
+	}
+	//draw();
 }
 
 function errData(err) {
