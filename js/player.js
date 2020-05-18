@@ -6,6 +6,9 @@ class Player {
     this.dir = dir;
     this.is_player = is_player;
     this.latestTime = Infinity;
+    this.anim_speed = 4;
+    this.anim_count = 0;
+    this.anim_frame = 0;
     if (this.is_player) {
       this.submit();
     }
@@ -20,6 +23,11 @@ class Player {
     if (this.checkPos(new_x, new_y)) {
       this.x = new_x;
       this.y = new_y;
+      this.anim_count++;
+      if (this.anim_count >= this.anim_speed) {
+        this.anim_count = 0;
+        this.anim_frame = (this.anim_frame == 0) ? 1 : 0;
+      }
       this.submit();      
     }
   }
@@ -31,7 +39,15 @@ class Player {
       fill(128);
     }
     //ellipse(this.x, this.y, 16, 16);
-    image((this.dir.x < 0) ? player_left_img : player_right_img, this.x - TILESIZE/2, this.y - TILESIZE/2);
+    if (!is_moving) {
+      image((this.dir.x < 0) ? player_left_img : player_right_img, this.x - TILESIZE/2, this.y - TILESIZE/2);
+    } else {
+      if (this.anim_frame == 0) {
+        image((this.dir.x < 0) ? player_left_walk_a_img : player_right_walk_a_img, this.x - TILESIZE/2, this.y - TILESIZE/2);
+      } else {
+        image((this.dir.x < 0) ? player_left_walk_b_img : player_right_walk_b_img, this.x - TILESIZE/2, this.y - TILESIZE/2);
+      }
+    }
     line(this.x, this.y, this.x + this.dir.x * TILESIZE, this.y + this.dir.y * TILESIZE);
   	text(this.name, this.x, this.y + 32);
   }
@@ -53,7 +69,7 @@ class Player {
 
   checkPos(new_x, new_y) {
     // Check canvas edge collision
-    if (new_x - (TILESIZE / 2) < 0 || new_x + (TILESIZE / 2) > width) {
+    if (new_x - (TILESIZE / 4) < 0 || new_x + (TILESIZE / 4) > width) {
       return false;
     }
     if (new_y - (TILESIZE / 2) < 0 || new_y + (TILESIZE / 2) > height) {

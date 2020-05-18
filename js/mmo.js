@@ -29,7 +29,7 @@ function setup() {
 	canvas.mousePressed(mouseDown);
 	canvas.mouseReleased(mouseUp);
 	textAlign(CENTER, CENTER);
-	frameRate(10);
+	frameRate(15);
 	// Map
 	tilemap = new TileMap();
 	// Player
