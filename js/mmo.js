@@ -58,11 +58,15 @@ function gotData(data) {
 			var x = records[name].x;
 			var y = records[name].y;
 			var dir = createVector(records[name].dir[0], records[name].dir[1]);
-			var time = records[name].time;
+			var time = records[name].lastAction;
 			// 10 minute timeout
-			if (firebase.database.ServerValue.TIMESTAMP - time < 600000) {
+			var timeout = 0.1 * 60 * 1000;
+			print(player.latestTime, time, player.latestTime - time, timeout);
+			if (player.latestTime - time < timeout) {
 				ghosts.push(new Player(name, x, y, dir, false));
 			}
+		} else {
+			player.latestTime = records[name].time
 		}
 	};
 	draw();
