@@ -39,7 +39,7 @@ class Player {
       fill(128);
     }
     //ellipse(this.x, this.y, 16, 16);
-    if (!is_moving) {
+    if (!is_moving || !this.is_player) {
       image((this.dir.x < 0) ? player_left_img : player_right_img, this.x - TILESIZE/2, this.y - TILESIZE/2);
     } else {
       if (this.anim_frame == 0) {
