@@ -1,14 +1,15 @@
 class Player {
-  constructor(name, x, y, dir, is_player) {
+  constructor(name, x, y, dir, is_player, is_moving, anim_frame) {
   	this.name = name
     this.x = x;
     this.y = y;
     this.dir = dir;
     this.is_player = is_player;
+    this.is_moving = is_moving;
     this.latestTime = Infinity;
     this.anim_speed = 4;
     this.anim_count = 0;
-    this.anim_frame = 0;
+    this.anim_frame = anim_frame;
     if (this.is_player) {
       this.submit();
     }
@@ -32,6 +33,15 @@ class Player {
     }
   }
 
+  startMoving() {
+    this.is_moving = true;
+  }
+
+  stopMoving() {
+    this.is_moving = false;
+    this.submit();    
+  }
+
   display() {
     if (this.is_player) {
       fill(255, 0, 0);
@@ -39,7 +49,7 @@ class Player {
       fill(128);
     }
     //ellipse(this.x, this.y, 16, 16);
-    if (!is_moving || !this.is_player) {
+    if (!this.is_moving) {
       image((this.dir.x < 0) ? player_left_img : player_right_img, this.x - TILESIZE/2, this.y - TILESIZE/2);
     } else {
       if (this.anim_frame == 0) {
@@ -57,6 +67,8 @@ class Player {
   		x: this.x,
   		y: this.y,
   		dir: [this.dir.x, this.dir.y],
+      isMoving: this.is_moving,
+      animFrame: this.anim_frame,
       lastAction: firebase.database.ServerValue.TIMESTAMP
   	};
   	var ref = database.ref('mmo/players');
