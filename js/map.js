@@ -38,7 +38,7 @@ function setup() {
   	let desc = "<b>Location</b><br>" + location;
   	desc += "<br><b>Organiser</b><br>" + organiser;
   	desc += "<br><b>Time</b><br>" + time;
-  	desc += "<br><b>Mesage</b><br>" + message;
+  	desc += "<br><b>Message</b><br>" + message;
   	console.log(desc);
   	if (type == "Protest") {
 			L.marker([lat, lon], { icon: protestIcon }).addTo(map).bindPopup(desc);
