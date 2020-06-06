@@ -40,7 +40,6 @@ function draw() {
 		let type = coordData.getRow(row).get(0);
   	let lat = parseFloat(coordData.getRow(row).get(1));
   	let lon = parseFloat(coordData.getRow(row).get(2));
-  	let description = coordData.getRow(row).get(3);
   	//console.log(type, lat, lon);
     const pix = map.latLngToPixel(lat, lon);
     fill(currentColor);
