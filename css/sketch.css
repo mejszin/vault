@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	width: 100vw;
+	overflow-x: hidden;
+	background-color: white;
+}
+
+#wrapper {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#sketch-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	display: inline;
+	width: 100%;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 8px 0;
+	letter-spacing: 4px;
+}
