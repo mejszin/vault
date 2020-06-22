@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap');
+
+h1 {
+    font-family: "Karla", sans-serif;
+    margin-bottom: 2px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    margin-top: 2px;
+    line-height: 1.2em;
+}
+
+h1 > p {
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5em;
+    font-weight: normal;
+    margin: 0 6px;
+}
+
+h1 > p > b {
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0 4px;
+}

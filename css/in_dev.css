@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+body {
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  color: #FFFFFF;
+}
+
+b.white {
+  color: #FFFFFF;
+}
+
+b.green {
+  color: #4ACFAC;
+}
+
+b.blue {
+  color: #36C7D0;
+}
+
+b.yellow {
+  color: #DCDCAA;
+}
+
+span {
+  display: inline-block;
+  line-height: 0.8em;
+  cursor: default;
+}
+
+h1 {
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-size: 2em;
+}
+
+p {
+  font-family: "Source Code Pro";
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+a {
+  cursor: pointer;
+  letter-spacing: inherit;
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  letter-spacing: 8px;
+}
+
+div#wrapper {
+  display: grid;
+  grid-auto-rows: 100vh;
+}
+
+div#wrapper > div {
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+div#wrapper > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#intro {
+  background: #1E1E1E;
+}
+
+div#intro span {
+  width: auto;
+  display: inline-block;
+	text-align: justify;
+	text-align-last: justify;
+  letter-spacing: -0.1em;
+}
+
+div#caremeds {
+  background: #0C7D9D;
+}
