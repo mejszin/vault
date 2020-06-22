@@ -37,16 +37,16 @@ h1 > p > b {
     margin: 0 3px;
 }
 
-#socials {
+.socials {
     letter-spacing: 4px;
 }
 
-#socials a {
-    font-size: 1.6em;
+.socials a {
+    font-size: 1.8em;
     color: grey;
 }
 
-#socials > i {
+.socials > i {
     font-size: 1.6em;
     color: grey;
     cursor: pointer;
