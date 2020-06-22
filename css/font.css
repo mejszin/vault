@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap');
 
-h1 {
+h1,h2 {
     font-family: "Karla", sans-serif;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
 }
 
-p {
+p,li {
     font-family: "Roboto", sans-serif;
-    margin-top: 2px;
+    margin-top: 8px;
     line-height: 1.2em;
+}
+
+li {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 h1 > p {
@@ -24,5 +34,20 @@ h1 > p > b {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
     font-weight: normal;
-    margin: 0 4px;
+    margin: 0 3px;
+}
+
+#socials {
+    letter-spacing: 4px;
+}
+
+#socials a {
+    font-size: 1.6em;
+    color: grey;
+}
+
+#socials > i {
+    font-size: 1.6em;
+    color: grey;
+    cursor: pointer;
 }
