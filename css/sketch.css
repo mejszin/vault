@@ -25,7 +25,13 @@ h1 {
 }
 
 h2 {
+	display: inline;
 	font-size: 2em;
 	margin: 8px 0;
 	letter-spacing: 4px;
+}
+
+h2#output {
+	float: right;
+	margin: 0;
 }
