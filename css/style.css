@@ -44,6 +44,6 @@ body {
   margin-top: 16px;
   margin-left: 32px;
   height: 128px;
-  background-color: lightcoral;
-  border-radius: 80px;
+  /*background-color: lightcoral;*/
+  border-radius: 8px;
 }
