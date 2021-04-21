@@ -37,6 +37,10 @@ I find polyhedra such as the Platonic and Archimedean solids endlessly
 fascinating. From their history to their beautiful relationships with other
 areas of mathematics.
 
+The <a href="1-1-1.html">following</a> is a simple p5.js script to show the vertices of a dodecahedron.
+I'd like to make more versatile visualiser and categorisation tool for these solids;
+A project for the future. 
+
 
 const CANVAS_SIZE = 640;
 const PERSPECTIVE = CANVAS_SIZE * 1;
@@ -133,7 +137,7 @@ function setup() {
 }
 
 function draw() {
-    background("#FFFFFF");
+    background("#0C0D10");
     // Draw dots
     for (let i = 0; i < dots.length; i++) {
         dots[i].rotateX(ROTATION_STEP);

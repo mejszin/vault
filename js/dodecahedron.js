@@ -93,7 +93,7 @@ function setup() {
 }
 
 function draw() {
-    background("#FFFFFF");
+    background("#0C0D10");
     // Draw dots
     for (let i = 0; i < dots.length; i++) {
         dots[i].rotateX(ROTATION_STEP);
