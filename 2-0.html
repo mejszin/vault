@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>machin.dev</title>
+<meta charset="utf-8">
+<style>
+    body {
+      color: #FEFEFE;
+      background-color: #0c0d10;
+      margin: 0 auto;
+      padding: 1em 0 1em 0;
+    }
+@font-face { font-family: "gohu"; src: url("gohu.woff") format('woff'); }
+       pre { font-family: "gohu", "Lucida Console", monospace, Monaco; font-size: 14px; line-height: 1.0; }
+         a { color: #93ffd7; text-decoration: none; }
+</style>
+</head>
+<body>
+<center><div style="display: inline-block; text-align: left;"><pre>
+                                                            ┌───────────────────────┐
+                                                            │                       │
+                                                            ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄       │
+                                                            █ █ █ █   █ █   █       │
+                                                            █ █ █ █▄▄▄█ █           │
+                                                            █   █ █   █ █▄▄▄▄       │
+                                                            │   ▄   ▄ ▄▄▄▄▄ ▄▄  ▄   │
+                                                            │   █   █   █   █ █ █   │
+                                                            │   █▄▄▄█   █   █  ██   │
+                                                            │   █   █ ▄▄█▄▄ █   █ ▄ │
+                                                            │       ▄▄▄▄  ▄▄▄▄▄ ▄   ▄
+                                                            │       █   █ █     █   █
+                                                            │       █   █ █▄▄▄▄  █ █│
+┌───────────────────────────────────────────────────────────│       █▄▄▄█ █▄▄▄▄  █▄█│
+│                                                           │                       │
+│   ELECTRONIC DATA INTERCHANGE                             └───────────────────────┘
+│           CODE LISTS                                                             │
+|                                                                                  |
+| <i>EDI code lists are a bitch to find online. They're all spread across hundreds of</i> |
+| <i>pages of unformatted documentation. I'm trying to collate and clean all the data</i> │
+| <i>I can find.</i>                                                                      │
+│                                                                                  │
+│ ===[ UN/EDIFACT ]=============================================================== │
+│                                                                                  │
+│ <i>To get the code lists I programmatically parse the UNCL docs from <a href="https://unece.org/trade/uncefact/unedifact/download">UNECE.org</a>;</i>     │
+│ <i>There may be parsing errors but I will fix them if found.</i>                        │
+│                                                                                  │
+│ Version D96A  <a href="./files/edi/UNCL_D96A.json">UNCL_D96A.json</a> ........................................ 06/05/2021 │
+│ Version D97A  <a href="./files/edi/UNCL_D97A.json">UNCL_D97A.json</a> ........................................ 06/05/2021 │
+│ Version D01B  <a href="./files/edi/UNCL_D01A.json">UNCL_D01A.json</a> ........................................ 06/05/2021 │
+│ Version D03B  <a href="./files/edi/UNCL_D03B.json">UNCL_D03B.json</a> ........................................ 06/05/2021 │
+│ Version D20A  <a href="./files/edi/UNCL_D20A.json">UNCL_D20A.json</a> ........................................ 06/05/2021 │
+│ Version D20B  <a href="./files/edi/UNCL_D20B.json">UNCL_D20B.json</a> ........................................ 06/05/2021 │
+│                                                                                  │
+│ ===[ EANCOM ]=================================================================== │
+│                                                                                  │
+│ Version 2002  <a href="./files/edi/EANCOM_2002.json">EANCOM_2002.json</a> <i>(source dated 10th July 2019)</i> ........ 06/05/2021 │
+│                                                                                  │
+│ ===[ /DEV/NULL ]================================================================ │
+│                                                                                  │
+│ The structure of the code list JSON files is like such:                          │
+│                                                                                  │
+│   {                                                                              │
+│       "9303": {                                                                  │
+│           "AA": {                                                                │
+│               "title": "Consolidator",                                           │
+│               "description": "Party which consolidates cargo."                   │
+│           },                                                                     │
+│           ...                                                                    │
+│       },                                                                         │
+│       ...                                                                        │
+│   }                                                                              │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+
+</pre></div></center></body></html>
