@@ -38,36 +38,65 @@
 │ <i>corresponding documentation that is available online. Some files are not entire</i>  │
 │ <i>valid messages but smaller examples of use cases.</i>                                │
 │                                                                                  │
-│ ===[ /DEV/NULL ]================================================================ │
+│ [X] <a href="#APERAK">APERAK</a>  [ ] CONPVA  [ ] DESTIM  [ ] IFTRIN  [ ] OSTENQ  [ ] RESMSG           │
+│ [X] <a href="#AUTACK">AUTACK</a>  [ ] CONQVA  [ ] DGRECA  [ ] IFTSAI  [ ] OSTRPT  [ ] RETACC           │
+│ [ ] AUTHOR  [ ] CONRPW  [ ] DIRDEB  [X] <a href="#IFTSTA">IFTSTA</a>  [ ] PARTIN  [X] <a href="#RETANN">RETANN</a>           │
+│ [ ] BANSTA  [ ] CONTEN  [ ] DIRDEF  [ ] IFTSTQ  [X] <a href="#PAXLST">PAXLST</a>  [ ] RETINS           │
+│ [ ] BAPLIE  [X] <a href="#CONTRL">CONTRL</a>  [ ] DOCADV  [ ] INFENT  [ ] PAYDUC  [ ] SAFHAZ           │
+│ [ ] BAPLTE  [ ] CONWQD  [ ] DOCAMA  [ ] INSPRE  [ ] PAYEXT  [ ] SANCRT           │
+│ [ ] BOPBNK  [ ] COPARN  [ ] DOCAMI  [X] <a href="#INVOIC">INVOIC</a>  [ ] PAYMUL  [ ] SLSFCT           │
+│ [ ] BOPCUS  [ ] COPINO  [ ] DOCAMR  [X] <a href="#INVRPT">INVRPT</a>  [ ] PAYORD  [ ] SLSRPT           │
+│ [ ] BOPDIR  [ ] COPRAR  [ ] DOCAPP  [ ] ITRRPT  [ ] PRICAT  [ ] SSIMOD           │
+│ [ ] BOPINF  [ ] COREOR  [ ] DOCARE  [ ] JAPRES  [ ] PRIHIS  [ ] SSRECH           │
+│ [ ] CALINF  [ ] COSTCO  [ ] DOCINF  [ ] JINFDE  [ ] PRODAT  [ ] SSREGW           │
+│ [ ] CASINT  [ ] COSTOR  [ ] FINCAN  [ ] JOBAPP  [ ] PRODEX  [ ] STATAC           │
+│ [ ] CASRES  [ ] CREADV  [ ] FINSTA  [ ] JOBCON  [ ] PROINQ  [ ] SUPCOT           │
+│ [ ] COARRI  [ ] CREEXT  [ ] GENRAL  [ ] JOBMOD  [ ] PRPAID  [ ] SUPMAN           │
+│ [ ] CODECO  [ ] CREMUL  [ ] HANMOV  [ ] JOBOFF  [ ] QALITY  [ ] SUPRES           │
+│ [ ] CODENO  [ ] CUSCAR  [ ] IFCSUM  [ ] LREACT  [ ] QUOTES  [ ] TANSTA           │
+│ [ ] COEDOR  [ ] CUSDEC  [ ] IFTCCA  [ ] MEDPID  [ ] REBORD  [ ] VATDEC           │
+│ [ ] COHAOR  [ ] CUSEXP  [ ] IFTDGN  [ ] MEDREQ  [ ] RECADV  [ ] VESDEP           │
+│ [ ] COLREQ  [ ] CUSPED  [ ] IFTFCC  [ ] MEDRPT  [ ] RECALC  [ ] WASDIS           │
+│ [ ] COMDIS  [ ] CUSREP  [ ] IFTIAG  [ ] MEDRUC  [ ] RECECO  [ ] WKGRDC           │
+│ [ ] CONAPW  [X] <a href="#CUSRES">CUSRES</a>  [ ] IFTMAN  [ ] MEQPOS  [ ] RECLAM  [ ] WKGRRE           │
+│ [ ] CONDPV  [ ] DEBADV  [ ] IFTMBC  [ ] MOVINS  [ ] REMADV                       │
+│ [ ] CONDRA  [ ] DEBMUL  [X] <a href="#IFTMBF">IFTMBF</a>  [ ] MSCONS  [ ] REPREM                       │
+│ [ ] CONDRO  [X] <a href="#DELFOR">DELFOR</a>  [ ] IFTMBP  [ ] ORDCHG  [ ] REQDOC                       │
+│ [ ] CONEST  [ ] DELJIT  [ ] IFTMCS  [X] <a href="#ORDERS">ORDERS</a>  [ ] REQOTE                       │
+│ [ ] CONITT  [X] <a href="#DESADV">DESADV</a>  [ ] IFTMIN  [ ] ORDRSP  [ ] RESETT                       │
 │                                                                                  │
 │ CSV           <a href="./edifact_documents.csv">edifact_documents.csv</a> ................................. 14/05/2021 │
+│ CSV           <a href="./edifact_subsets.csv">edifact_subsets.csv</a> ................................... 18/05/2021 │
 │                                                                                  │
-│ [X] <a href="#APERAK">APERAK</a>  [·] DELFOR  [·] IFTMBF  [·] ORDRSP  [·] QUOTES                       │
-│ [·] AUTACK  [X] <a href="#DESADV">DESADV</a>  [·] IFTMIN  [·] OSTENQ  [·] RECADV                       │
-│ [·] BANSTA  [·] DIRDEB  [·] IFTSTA  [·] OSTRPT  [·] REMADV                       │
-│ [·] CNTCND  [·] FINCAN  [·] INSDES  [·] PARTIN  [·] REQOTE                       │
-│ [·] COACSU  [·] FINSTA  [X] <a href="#INVOIC">INVOIC</a>  [·] PAYDUC  [·] RETANN                       │
-│ [·] COMDIS  [·] GENRAL  [X] <a href="#INVRPT">INVRPT</a>  [·] PAYMUL  [·] RETINS                       │
-│ [·] CONDRA  [·] HANMOV  [·] KEYMAN  [·] PRICAT  [·] SLSFCT                       │
-│ [X] <a href="#CONTRL">CONTRL</a>  [·] IFCSUM  [·] MSCONS  [·] PRODAT  [·] SLSRPT                       │
-│ [·] CREMUL  [·] IFTMAN  [·] ORDCHG  [·] PROINQ  [·] TAXCON                       │
-│ [·] DEBMUL  [·] IFTMBC  [X] <a href="#ORDERS">ORDERS</a>  [·] QALITY                                   │
+│ File naming convention: &lt;document&gt;_&lt;version&gt;_&lt;source&gt;_&lt;ref:optional&gt;.edi         │
 │                                                                                  │
 │ ===[ APERAK ]=================================================================== │<i id="APERAK"></i>
 │                                                                                  │
 │ Version D96B  <a href="./samples/APERAK_D96B_transnet_0_ref.edi">APERAK_D96B_transnet_0_ref.edi</a> ............ <a href="./samples/reference/APERAK_Transnet.pdf"><i>(Reference)</i></a> 14/05/2021 │
 │ Version D96B  <a href="./samples/APERAK_D96B_transnet_1_ref.edi">APERAK_D96B_transnet_1_ref.edi</a> ............ <a href="./samples/reference/APERAK_Transnet.pdf"><i>(Reference)</i></a> 14/05/2021 │
+│ Version D97A  <a href="./samples/APERAK_D97A_iway.edi">APERAK_D97A_iway.edi</a> .................................. 18/05/2021 │
 │                                                                                  │
-│ Version D97A  <a href="./samples/APERAK_D97A_iway.edi">APERAK_D97A_iway.edi</a> ................................. </a> 18/05/2021 │
+│ ===[ AUTACK ]=================================================================== │<i id="AUTACK"></i>
+│                                                                                  │
+│ Version 31    <a href="./samples/AUTACK_31_swedishbankers.edi">AUTACK_31_swedishbankers.edi</a> .......................... 18/05/2021 │
 │                                                                                  │
 │ ===[ CONTRL ]=================================================================== │<i id="CONTRL"></i>
 │                                                                                  │
-│ Version D3    <a href="./samples/CONTRL_D3_iway.edi">CONTRL_D3_iway.edi</a> ................................... </a> 18/05/2021 │
+│ Version D3    <a href="./samples/CONTRL_D3_iway.edi">CONTRL_D3_iway.edi</a> .................................... 18/05/2021 │
+│ Version D3    <a href="./samples/CONTRL_D3_utilmd.edi">CONTRL_D3_utilmd.edi</a> .................................. 18/05/2021 │
+│ Version 22    <a href="./samples/CONTRL_22_oracle.edi">CONTRL_22_oracle.edi</a> .................................. 18/05/2021 │
+│                                                                                  │
+│ ===[ CUSRES ]=================================================================== │<i id="CUSRES"></i>
+│                                                                                  │
+│ Version D05B  <a href="./samples/CUSRES_D05B_cbp.edi">CUSRES_D05B_cbp.edi</a> ................................... 18/05/2021 │
+│                                                                                  │
+│ ===[ DELFOR ]=================================================================== │<i id="DELFOR"></i>
+│                                                                                  │
+│ Version D97A  <a href="./samples/DELFOR_D97A_iconnect.edi">DELFOR_D97A_iconnect.edi</a> .............................. 18/05/2021 │
 │                                                                                  │
 │ ===[ DESADV ]=================================================================== │<i id="DESADV"></i>
 │                                                                                  │
-│ Version D93A  <a href="./samples/DESADV_D93A_smooks.edi">DESADV_D93A_smooks.edi</a> ............................... </i></a> 14/05/2021 │
-│                                                                                  │
+│ Version D93A  <a href="./samples/DESADV_D93A_smooks.edi">DESADV_D93A_smooks.edi</a> ................................ 14/05/2021 │
 │ Version D96A  <a href="./samples/DESADV_D96A_body_volvo_0_ref.edi">DESADV_D96A_body_volvo_0_ref.edi</a> .......... <a href="./samples/reference/DESADV_Volvo.pdf"><i>(Reference)</i></a> 14/05/2021 │
 │ Version D96A  <a href="./samples/DESADV_D96A_body_volvo_1_ref.edi">DESADV_D96A_body_volvo_1_ref.edi</a> .......... <a href="./samples/reference/DESADV_Volvo.pdf"><i>(Reference)</i></a> 14/05/2021 │
 │ Version D96A  <a href="./samples/DESADV_D96A_diehl_ref.edi">DESADV_D96A_diehl_ref.edi</a> ................. <a href="./samples/reference/DESADV_Diehl.pdf"><i>(Reference)</i></a> 14/05/2021 │
@@ -76,33 +105,69 @@
 │ Version D96A  <a href="./samples/DESADV_D96A_tenneco_0_ref.edi">DESADV_D96A_tenneco_0_ref.edi</a> ............. <a href="./samples/reference/DESADV_Tenneco.pdf"><i>(Reference)</i></a> 14/05/2021 │
 │ Version D96A  <a href="./samples/DESADV_D96A_tenneco_1_ref.edi">DESADV_D96A_tenneco_1_ref.edi</a> ............. <a href="./samples/reference/DESADV_Tenneco.pdf"><i>(Reference)</i></a> 14/05/2021 │
 │ Version D96A  <a href="./samples/DESADV_D96A_tenneco_2_ref.edi">DESADV_D96A_tenneco_2_ref.edi</a> ............. <a href="./samples/reference/DESADV_Tenneco.pdf"><i>(Reference)</i></a> 14/05/2021 │
-│                                                                                  │
 │ Version D01B  <a href="./samples/DESADV_D01B_edifabric.edi">DESADV_D01B_edifabric.edi</a> ............................. 14/05/2021 │
-│                                                                                  │
+│ Version D01B  <a href="./samples/DESADV_D01B_ecosio.edi">DESADV_D01B_ecosio.edi</a> ................................ 18/05/2021 │
 │ Version D07A  <a href="./samples/DESADV_D07A_continental_ref.edi">DESADV_D07A_continental_ref.edi</a> ........... <a href="./samples/reference/DESADV_Continental.pdf"><i>(Reference)</i></a> 14/05/2021 │
+│                                                                                  │
+│ ===[ IFTMBF ]=================================================================== │<i id="IFTMBF"></i>
+│                                                                                  │
+│ Version D99B  <a href="./samples/IFTMBF_D99B_wwa.edi">IFTMBF_D99B_wwa.edi</a> ................................... 18/05/2021 │
+│                                                                                  │
+│ ===[ IFTSTA ]=================================================================== │<i id="IFTSTA"></i>
+│                                                                                  │
+│ Version D94A  <a href="./samples/IFTSTA_D94A_bring_ref.edi">IFTSTA_D94A_bring_ref.edi</a> ................. <a href="./samples/reference/IFTSTA_Bring.pdf"><i>(Reference)</i></a> 14/05/2021 │
 │                                                                                  │
 │ ===[ INVOIC ]=================================================================== │<i id="INVOIC"></i>
 │                                                                                  │
 │ Version D93A  <a href="./samples/INVOIC_D93A_smooks.edi">INVOIC_D93A_smooks.edi</a> ................................ 14/05/2021 │
 │ Version D93A  <a href="./samples/INVOIC_D93A_multiple_smooks.edi">INVOIC_D93A_multiple_smooks.edi</a> ....................... 14/05/2021 │
-│                                                                                  │
-│ Version D97A  <a href="./samples/INVOIC_D97A_iway.edi">INVOIC_D97A_iway.edi</a> ................................. </a> 18/05/2021 │
+│ Version D97A  <a href="./samples/INVOIC_D97A_iway.edi">INVOIC_D97A_iway.edi</a> .................................. 18/05/2021 │
 │                                                                                  │
 │ ===[ INVRPT ]=================================================================== │<i id="INVRPT"></i>
 │                                                                                  │
-│ Version D01B  <a href="./samples/INVRPT_D01B_gs1_ref.edi">INVRPT_D01B_gs1_ref.edi</a> ....................<a href="./samples/reference/INVRPT_GS1.pdf"><i>(Reference)</i></a> 14/05/2021 │
+│ Version D01B  <a href="./samples/INVRPT_D01B_gs1_ref.edi">INVRPT_D01B_gs1_ref.edi</a> ................... <a href="./samples/reference/INVRPT_GS1.pdf"><i>(Reference)</i></a> 14/05/2021 │
+│ Version D13A  <a href="./samples/INVRPT_D13A_continental_ref.edi">INVRPT_D13A_continental_ref.edi</a> ........... <a href="./samples/reference/INVRPT_Continental.pdf"><i>(Reference)</i></a> 18/05/2021 │
 │                                                                                  │
 │ ===[ ORDERS ]=================================================================== │<i id="ORDERS"></i>
 │                                                                                  │
 │ Version D93A  <a href="./samples/ORDERS_D93A_smooks.edi">ORDERS_D93A_smooks.edi</a> ................................ 14/05/2021 │
+│ Version D96A  <a href="./samples/ORDERS_D96A_bin.edi">ORDERS_D96A_bin.edi</a> ................................... 18/05/2021 │
+│ Version D96A  <a href="./samples/ORDERS_D96A_djan.edi">ORDERS_D96A_djan.edi</a> .................................. 18/05/2021 │
+│ Version D96A  <a href="./samples/ORDERS_D96A_edifabric.edi">ORDERS_D96A_edifabric.edi</a> ............................. 18/05/2021 │
+│ Version D97A  <a href="./samples/ORDERS_D97A_iway.edi">ORDERS_D97A_iway.edi</a> .................................. 18/05/2021 │
+│ Version D18A  <a href="./samples/ORDERS_D18A_ieffect.edi">ORDERS_D18A_ieffect.edi</a> ............................... 18/05/2021 │
 │                                                                                  │
-│ Version D97A  <a href="./samples/ORDERS_D97A_iway.edi">ORDERS_D97A_iway.edi</a> ................................. </a> 18/05/2021 │
+│ ===[ PAXLST ]=================================================================== │<i id="PAXLST"></i>
+│                                                                                  │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_00.edi">PAXLST_D02B_indexnld_00.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_01.edi">PAXLST_D02B_indexnld_01.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_02.edi">PAXLST_D02B_indexnld_02.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_03.edi">PAXLST_D02B_indexnld_03.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_04.edi">PAXLST_D02B_indexnld_04.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_05.edi">PAXLST_D02B_indexnld_05.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_06.edi">PAXLST_D02B_indexnld_06.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_07.edi">PAXLST_D02B_indexnld_07.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_08.edi">PAXLST_D02B_indexnld_08.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_09.edi">PAXLST_D02B_indexnld_09.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_10.edi">PAXLST_D02B_indexnld_10.edi</a> ........................... 18/05/2021 │
+│ Version D02B  <a href="./samples/PAXLST_D02B_indexnld_11.edi">PAXLST_D02B_indexnld_11.edi</a> ........................... 18/05/2021 │
+│ Version D18A  <a href="./samples/PAXLST_D05B_cbp.edi">PAXLST_D05B_cbp.edi</a> ................................... 18/05/2021 │
+│                                                                                  │
+│ ===[ RETANN ]=================================================================== │<i id="RETANN"></i>
+│                                                                                  │
+│ Version D96A  <a href="./samples/RETANN_D96A_kingfisher_0.edi">RETANN_D96A_kingfisher_0.edi</a> .......................... 18/05/2021 │
+│ Version D96A  <a href="./samples/RETANN_D96A_kingfisher_1.edi">RETANN_D96A_kingfisher_1.edi</a> .......................... 18/05/2021 │
+│ Version D96A  <a href="./samples/RETANN_D96A_kingfisher_2.edi">RETANN_D96A_kingfisher_2.edi</a> .......................... 18/05/2021 │
 │                                                                                  │
 │ ===[ AVIEXP (Odette) ]========================================================== │<i id="AVIEXP"></i>
 │                                                                                  │
 │ Version 3     <a href="./samples/AVIEXP_3_adient_ref.edi">AVIEXP_3_adient_ref.edi</a> ................... <a href="./samples/reference/AVIEXP_Adient.pdf"><i>(Reference)</i></a> 14/05/2021 │
 │ Version 3     <a href="./samples/AVIEXP_3_body_volvo_0_ref.edi">AVIEXP_3_body_volvo_0_ref.edi</a> ............. <a href="./samples/reference/DESADV_Volvo.pdf"><i>(Reference)</i></a> 14/05/2021 │
 │ Version 3     <a href="./samples/AVIEXP_3_body_volvo_1_ref.edi">AVIEXP_3_body_volvo_1_ref.edi</a> ............. <a href="./samples/reference/DESADV_Volvo.pdf"><i>(Reference)</i></a> 14/05/2021 │
+│                                                                                  │
+│ ===[ MEDREF (MedCom) ]========================================================== │<i id="MEDREF"></i>
+│                                                                                  │
+│ Version D93A  <a href="./samples/MEDREF_D93A_medcom_ref.edi">MEDREF_D93A_medcom_ref.edi</a> ................ <a href="./samples/reference/MEDREF_medcom.pdf"><i>(Reference)</i></a> 18/05/2021 │
 │                                                                                  │
 └──────────────────────────────────────────────────────────────────────────────────┘
 </pre></div></center></body></html>
