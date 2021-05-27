@@ -1,0 +1,6 @@
+UNA1,Component data element separator,Used as a separator between component data elements contained within a composite data element (default value: ":")
+UNA2,Data element separator,Used to separate two simple or composite data elements (default value: "+")
+UNA3,Decimal mark,Used to indicate the character used for decimal notation (default value: ".")
+UNA4,Release character,Used to restore any service character to its original specification (default value: "?")
+UNA5,Repetition separator,Used to indicate the character used for repetition separation (default value: "*")
+UNA6,Segment terminator,Used to indicate the end of segment data (default value: "'")

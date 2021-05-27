@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>machin.dev</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<center><div style="display: inline-block; text-align: left;"><pre>
+                                                            ┌───────────────────────┐
+                                                            │                       │
+                                                            ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄       │
+                                                            █ █ █ █   █ █   █       │
+                                                            █ █ █ █▄▄▄█ █           │
+                                                            █   █ █   █ █▄▄▄▄       │
+                                                            │   ▄   ▄ ▄▄▄▄▄ ▄▄  ▄   │
+                                                            │   █   █   █   █ █ █   │
+                                                            │   █▄▄▄█   █   █  ██   │
+                                                            │   █   █ ▄▄█▄▄ █   █ ▄ │
+                                                            │       ▄▄▄▄  ▄▄▄▄▄ ▄   ▄
+                                                            │       █   █ █     █   █
+                                                            │       █   █ █▄▄▄▄  █ █│
+┌───────────────────────────────────────────────────────────│       █▄▄▄█ █▄▄▄▄  █▄█│
+│                                                           │                       │
+│   ELECTRONIC DATA INTERCHANGE                             └───────────────────────┘
+│         TEST MESSAGES                                                            │
+│                                                                                  │
+│                                                                                  │
+│ ===[ UN/EDIFACT ]=============================================================== │
+│                                                                                  │
+│ Scenario 01  Line separated INVRPT message                                 <em class="green">VALID</em> │
+│              <a href ="./tests/punct_good_0.edi">punct_good_0.edi</a> ....................................... 27/05/2021 │
+│                                                                                  │
+│ Scenario 02  Single line INVRPT message                                    <em class="green">VALID</em> │
+│              <a href ="./tests/punct_good_1.edi">punct_good_1.edi</a> ....................................... 27/05/2021 │
+│                                                                                  │
+│ Scenario 03  Line separated INVRPT message with UNA segment                <em class="green">VALID</em> │
+│              <a href ="./tests/punct_good_2.edi">punct_good_2.edi</a> ....................................... 27/05/2021 │
+│                                                                                  │
+│ Scenario 04  Line separated INVRPT message without segment terminator    <em class="red">INVALID</em> │
+│              <a href ="./tests/punct_bad_0.edi" >punct_bad_0.edi</a> ........................................ 27/05/2021 │
+│                                                                                  │
+│ Scenario 05  Single line INVRPT message without segment terminators      <em class="red">INVALID</em> │
+│              <a href ="./tests/punct_bad_1.edi" >punct_bad_1.edi</a> ........................................ 27/05/2021 │
+│                                                                                  │
+│ Scenario 06  INVRPT message with UNA segment and no segment terminators  <em class="red">INVALID</em> │
+│              <a href ="./tests/punct_bad_2.edi" >punct_bad_2.edi</a> ........................................ 27/05/2021 │
+│                                                                                  │
+│ Scenario 07  Single line made-up INVXXX message                          <em class="red">INVALID</em> │
+│              <a href ="./tests/punct_bad_3.edi" >punct_bad_3.edi</a> ........................................ 27/05/2021 │
+│                                                                                  │
+│ Scenario 08  Single line message with empty message type (0065)          <em class="red">INVALID</em> │
+│              <a href ="./tests/punct_bad_4.edi" >punct_bad_4.edi</a> ........................................ 27/05/2021 │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+</pre></div></center></body></html>

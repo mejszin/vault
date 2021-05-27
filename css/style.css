@@ -1,4 +1,60 @@
-h1, p {
-  font-family: monospace;
-  font-size: 1em;
+/* Palette
+#93ffd7 Teal (click me!)
+#CD3131 Red
+#F14C4C Light Red
+#0DBC79 Green
+#23D18B Light Green
+*/
+
+
+body {
+  color: #FEFEFE;
+  background-color: #0c0d10;
+  margin: 0 auto;
+  padding: 1em 0 1em 0;
+}
+
+@font-face { 
+  font-family: "gohu";
+  src: url("../gohu.woff") format('woff');
+}
+
+pre { 
+  font-family: "gohu", "Lucida Console", monospace, Monaco;
+  font-size: 14px;
+  line-height: 1.0;
+}
+
+a {
+  color: #93ffd7;
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+em.red {
+  color: #CD3131;
+}
+
+em.light_red {
+  color: #F14C4C;
+}
+
+em.green {
+  color: #0DBC79;
+}
+
+em.light_green {
+  color: #23D18B;
+}
+
+
+#sketch {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
