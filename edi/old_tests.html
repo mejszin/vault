@@ -28,83 +28,49 @@
 │ ===[ UN/EDIFACT ]=============================================================== │
 │                                                                                  │
 │ Scenario 01  Line separated INVRPT message ............................... <em class="green">VALID</em> │
-│              <a href="./tests/punct_good_0.edi">punct_good_0.edi</a> ....................................... 28/05/2021 │
+│              <a href ="./tests/punct_good_0.edi">punct_good_0.edi</a> ....................................... 27/05/2021 │
 │                                                                                  │
 │              <em class="green">`</em> <em class="light-green">valid segment terminator</em>                                          │
 │              <em class="green">`</em> <em class="light-green">valid message type</em>                                                │
-│              <em class="green">`</em> <em class="light-green">valid message segments</em>                                            │
-│              <em class="green">`</em> <em class="light-green">complete envelopes</em>                                                │
 │                                                                                  │
 │ Scenario 02  Single line INVRPT message .................................. <em class="green">VALID</em> │
-│              <a href="./tests/punct_good_1.edi">punct_good_1.edi</a> ....................................... 28/05/2021 │
+│              <a href ="./tests/punct_good_1.edi">punct_good_1.edi</a> ....................................... 27/05/2021 │
 │                                                                                  │
 │              <em class="green">`</em> <em class="light-green">valid segment terminator</em>                                          │
 │              <em class="green">`</em> <em class="light-green">valid message type</em>                                                │
-│              <em class="green">`</em> <em class="light-green">valid message segments</em>                                            │
-│              <em class="green">`</em> <em class="light-green">complete envelopes</em>                                                │
 │                                                                                  │
 │ Scenario 03  Line separated INVRPT message w/ UNA segment ................ <em class="green">VALID</em> │
-│              <a href="./tests/punct_good_2.edi">punct_good_2.edi</a> ....................................... 28/05/2021 │
+│              <a href ="./tests/punct_good_2.edi">punct_good_2.edi</a> ....................................... 27/05/2021 │
 │                                                                                  │
 │              <em class="green">`</em> <em class="light-green">valid segment terminator</em>                                          │
 │              <em class="green">`</em> <em class="light-green">valid message type</em>                                                │
-│              <em class="green">`</em> <em class="light-green">valid message segments</em>                                            │
-│              <em class="green">`</em> <em class="light-green">complete envelopes</em>                                                │
 │                                                                                  │
-│ Scenario 04  Line separated INVRPT message w/o segment terminators ..... <em class="red">INVALID</em> │
-│              <a href="./tests/punct_bad_0.edi">punct_bad_0.edi</a> ........................................ 28/05/2021 │
+│ Scenario 04  Line separated INVRPT message w/o segment terminator ...... <em class="red">INVALID</em> │
+│              <a href ="./tests/punct_bad_0.edi" >punct_bad_0.edi</a> ........................................ 27/05/2021 │
 │                                                                                  │
 │              <em class="red">x</em> <em class="light-red">invalid segment terminator</em>                                        │
 │                                                                                  │
 │ Scenario 05  Single line INVRPT message w/o segment terminators ........ <em class="red">INVALID</em> │
-│              <a href="./tests/punct_bad_1.edi">punct_bad_1.edi</a> ........................................ 28/05/2021 │
+│              <a href ="./tests/punct_bad_1.edi" >punct_bad_1.edi</a> ........................................ 27/05/2021 │
 │                                                                                  │
 │              <em class="red">x</em> <em class="light-red">invalid segment terminator</em>                                        │
 │                                                                                  │
 │ Scenario 06  INVRPT message w/ UNA segment and no segment terminators .. <em class="red">INVALID</em> │
-│              <a href="./tests/punct_bad_2.edi">punct_bad_2.edi</a> ........................................ 28/05/2021 │
+│              <a href ="./tests/punct_bad_2.edi" >punct_bad_2.edi</a> ........................................ 27/05/2021 │
 │                                                                                  │
-│              <em class="red">x</em> <em class="light-red">invalid 'UNA' segment</em>                                             │
+│              <em class="red">x</em> <em class="light-red">invalid UNA segment</em>                                               │
 │                                                                                  │
 │ Scenario 07  Single line made-up INVXXX message ........................ <em class="red">INVALID</em> │
-│              <a href="./tests/mssge_bad_0.edi">mssge_bad_0.edi</a>......................................... 28/05/2021 │
+│              <a href ="./tests/mssge_bad_0.edi" >mssge_bad_0.edi</a> ........................................ 27/05/2021 │
 │                                                                                  │
 │              <em class="green">`</em> <em class="light-green">valid segment terminator</em>                                          │
 │              <em class="red">x</em> <em class="light-red">unknown message type 'INVXXX'</em>                                     │
-│              <em class="green">`</em> <em class="light-green">valid message segments</em>                                            │
-│              <em class="green">`</em> <em class="light-green">complete envelopes</em>                                                │
 │                                                                                  │
 │ Scenario 08  Single line message w/ empty message type (0065) .......... <em class="red">INVALID</em> │
-│              <a href="./tests/mssge_bad_1.edi">mssge_bad_1.edi</a> ........................................ 28/05/2021 │
+│              <a href ="./tests/mssge_bad_1.edi" >mssge_bad_1.edi</a> ........................................ 27/05/2021 │
 │                                                                                  │
 │              <em class="green">`</em> <em class="light-green">valid segment terminator</em>                                          │
 │              <em class="red">x</em> <em class="light-red">empty message type</em>                                                │
-│              <em class="green">`</em> <em class="light-green">valid message segments</em>                                            │
-│              <em class="green">`</em> <em class="light-green">complete envelopes</em>                                                │
-│                                                                                  │
-│ Scenario 09  Single line message w/ UNH and w/o UNT segment ............ <em class="red">INVALID</em> │
-│              <a href="./tests/mssge_bad_2.edi">mssge_bad_2.edi</a> ........................................ 28/05/2021 │
-│                                                                                  │
-│              <em class="green">`</em> <em class="light-green">valid segment terminator</em>                                          │
-│              <em class="green">`</em> <em class="light-green">valid message type</em>                                                │
-│              <em class="green">`</em> <em class="light-green">valid message segments</em>                                            │
-│              <em class="red">x</em> <em class="light-red">invalid 'UNHUNT' envelope</em>                                         │
-│                                                                                  │
-│ Scenario 10  Line separated message w/ UNZ and w/o UNB segment ......... <em class="red">INVALID</em> │
-│              <a href="./tests/mssge_bad_3.edi">mssge_bad_3.edi</a> ........................................ 28/05/2021 │
-│                                                                                  │
-│              <em class="green">`</em> <em class="light-green">valid segment terminator</em>                                          │
-│              <em class="green">`</em> <em class="light-green">valid message type</em>                                                │
-│              <em class="green">`</em> <em class="light-green">valid message segments</em>                                            │
-│              <em class="red">x</em> <em class="light-red">invalid 'UNBUNZ' envelope</em>                                         │
-│                                                                                  │
-│ Scenario 11  Single line message w/ made-up LXN segment ................ <em class="red">INVALID</em> │
-│              <a href="./tests/segmt_bad_0.edi">segmt_bad_0.edi</a> ........................................ 28/05/2021 │
-│                                                                                  │
-│              <em class="green">`</em> <em class="light-green">valid segment terminator</em>                                          │
-│              <em class="green">`</em> <em class="light-green">valid message type</em>                                                │
-│              <em class="red">x</em> <em class="light-red">unknown message segment 'LXN'</em>                                     │
-│              <em class="green">`</em> <em class="light-green">complete envelopes</em>                                                │
 │                                                                                  │
 └──────────────────────────────────────────────────────────────────────────────────┘
 </pre></div></center></body></html>
