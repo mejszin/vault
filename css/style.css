@@ -16,7 +16,7 @@ body {
 
 @font-face { 
   font-family: "gohu";
-  src: url("../gohu.woff") format('woff');
+  src: url("../css/gohu.woff") format('woff');
 }
 
 pre { 
