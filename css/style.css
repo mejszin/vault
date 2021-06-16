@@ -12,12 +12,13 @@
 }
 
 body {
+  display: flex;
   color: #FEFEFE;
   background-color: #0c0d10;
   margin: 0 0;
   padding: 1em 0 1em 0;
   overflow-y: scroll;
-  width: 100vw;
+  justify-content: center;
 }
 
 pre { 
