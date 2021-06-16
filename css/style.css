@@ -6,22 +6,25 @@
 #23D18B Light Green
 */
 
-
-body {
-  color: #FEFEFE;
-  background-color: #0c0d10;
-  margin: 0 auto;
-  padding: 1em 0 1em 0;
-}
-
 @font-face { 
   font-family: "gohu";
   src: url("../css/gohu.woff") format('woff');
 }
 
+body {
+  color: #FEFEFE;
+  background-color: #0c0d10;
+  margin: 0 0;
+  padding: 1em 0 1em 0;
+  overflow-y: scroll;
+  width: 100vw;
+}
+
 pre { 
   font-family: "gohu", "Lucida Console", monospace, Monaco;
   font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
   line-height: 1.0;
 }
 
@@ -49,7 +52,6 @@ em.green {
 em.light-green {
   color: #23D18B;
 }
-
 
 #sketch {
   display: flex;
