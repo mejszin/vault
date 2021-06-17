@@ -26,12 +26,11 @@ function draw() {
         quote.substr(0, str_width - partition)
     // Construct ASCII output // ═=║ |-
     inner = ""
-    inner += "+" + ("-").repeat(str_width) + "+\n"
-    inner += "|" + split_string + "|\n"
-    inner += "+" + ("-").repeat(str_width) + "+"
+    inner += "┌" + ("─").repeat(str_width) + "┐\n"
+    inner += "│" + split_string + "│\n"
+    inner += "└" + ("─").repeat(str_width) + "┘"
     // Assign inner HTML to DOM element
     pre.html(inner);
     // Iterate partition index
     partition = (partition + 1) % str_width
 }
-
