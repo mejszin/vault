@@ -14,9 +14,9 @@ function setup() {
     frameRate(8);
     // Assign DOM element
     pre = select('#anim');
-    // Get quote phrase and pad with spaces
-    quote = random(quotes)
-    quote += (" ").repeat(str_width - quote.length)
+    // Get quote phrase and pad
+    quote = " " + random(quotes) + " "
+    quote += ("·").repeat(str_width - quote.length)
 }
 
 function draw() {
