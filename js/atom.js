@@ -11,7 +11,7 @@ class Orbit {
         this.r = r * SPACING;
         this.n = n;
         this.d = DIAMETER;
-        this.offset = 0;
+        this.offset = -HALF_PI;
         this.speed = (r % 2 == 1) ? random(0.01) : -random(0.01);
     }
 
@@ -27,8 +27,8 @@ class Orbit {
         // Electrons
         fill(BKG_CLR);
         for(let i = 0; i < this.n; i++) {
-            let x = this.r * cos(i * (TWO_PI / this.n) - HALF_PI + this.offset);
-            let y = this.r * sin(i * (TWO_PI / this.n) - HALF_PI + this.offset);
+            let x = this.r * cos(i * (TWO_PI / this.n) + this.offset);
+            let y = this.r * sin(i * (TWO_PI / this.n) + this.offset);
             circle(x, y, this.d);
         }
     }
