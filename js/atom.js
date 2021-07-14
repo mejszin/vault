@@ -12,7 +12,7 @@ class Orbit {
         this.n = n;
         this.d = DIAMETER;
         this.offset = -HALF_PI;
-        this.speed = (r % 2 == 1) ? random(0.01) : -random(0.01);
+        this.speed = (r % 2 == 1) ? random(0.05) : -random(0.05);
     }
 
     update() {
