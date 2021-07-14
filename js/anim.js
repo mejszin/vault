@@ -11,7 +11,7 @@ function preload() {
 
 function setup() {
     noCanvas();
-    frameRate(8);
+    frameRate(4);
     // Assign DOM element
     pre = select('#anim');
     // Get quote phrase and pad
