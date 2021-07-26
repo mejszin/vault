@@ -1,0 +1,14 @@
+CALINF,Call information (vessel) / advice of expected container operations
+COARRI,Container discharge / loading report
+CODECO,Container gate in gate out report
+CODENO,Document expiration / clearance ready notice
+COEDOR,Container stock report
+COHAOR,Container special handling order
+COPARN,Container announcement
+COPINO,Container pre notification
+COPRAR,Container discharge / loading order
+COREOR,Container release order
+COSTCO,Container stuffing / stripping confirmation
+COSTOR,Container stuffing / stripping order
+DESTIM,Equipment damage / repair estimate
+VESDEP,Vessel departur
