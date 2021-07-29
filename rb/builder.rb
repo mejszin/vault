@@ -46,7 +46,8 @@ class Builder
     end
 
     def image(l, t, arr = SIGNATURE)
-        w, h = arr.first.length, arr.length
+        w, h = 0, arr.length; arr.each { |line| w = line.length > w ? line.length : w }
+        arr.map! { |line| line.ljust(w, " ") }
         pad_until(t + h)
         (l...l + w).each_with_index do |x, i|
             (t...t + h).each_with_index do |y, j|

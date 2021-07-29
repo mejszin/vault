@@ -1,5 +1,5 @@
-documents = ["APERAK", "AUTACK", "AUTHOR", "AVLREQ", "AVLRSP", "BALANC", "BANSTA", "BAPLIE", "BAPLTE", "BERMAN", "BMISRM", "BOPBNK", "BOPCUS", "BOPDIR", "BOPINF", "BUSCRD", "CALINF", "CASINT", "CASRES", "CHACCO", "CLASET", "CNTCND", "COACSU", "COARRI", "CODECO", "CODENO", "COEDOR", "COHAOR", "COLREQ", "COMDIS", "CONAPW", "CONDPV", "CONDRA", "CONDRO", "CONEST", "CONITT", "CONPVA", "CONQVA", "CONRPW", "CONTEN", "CONTRL", "CONWQD", "COPARN", "COPAYM", "COPINO", "COPRAR", "COREOR", "COSTCO", "COSTOR", "CREADV", "CREEXT", "CREMUL", "CUSCAR", "CUSDEC", "CUSEXP", "CUSPED", "CUSREP", "CUSRES", "DEBADV", "DEBMUL", "DEBREC", "DELFOR", "DELJIT", "DESADV", "DESTIM", "DGRECA", "DIRDEB", "DIRDEF", "DMRDEF", "DMSTAT", "DOCADV", "DOCAMA", "DOCAMI", "DOCAMR", "DOCAPP", "DOCARE", "DOCINF", "ENTREC", "FINCAN", "FINPAY", "FINSTA", "GENRAL", "GESMES", "HANMOV", "ICASRP", "ICSOLI", "IFCSUM", "IFTCCA", "IFTDGN", "IFTFCC", "IFTIAG", "IFTICL", "IFTMAN", "IFTMBC", "IFTMBF", "IFTMBP", "IFTMCA", "IFTMCS", "IFTMFR", "IFTMIN", "IFTRIN", "IFTSAI", "IFTSTA", "IFTSTQ", "IHCEBI", "IHCLME", "IMPDEF", "INFCON", "INFENT", "INSDES", "INSPRE", "INSREQ", "INSRPT", "INTCHG", "INVOIC", "INVRPT", "IPPOAD", "IPPOMO", "ISENDS", "ITRRPT", "JAPRES", "JINFDE", "JOBAPP", "JOBCON", "JOBMOD", "JOBOFF", "JUPREQ", "LEDGER", "LREACT", "LRECLM", "MEDPID", "MEDPRE", "MEDREQ", "MEDRPT", "MEDRUC", "MEQPOS", "MOVINS", "MSCONS", "ORDCHG", "ORDERS", "ORDRSP", "OSTENQ", "OSTRPT", "PARTIN", "PASREQ", "PASRSP", "PAXLST", "PAYDUC", "PAYEXT", "PAYMUL", "PAYORD", "PRICAT", "PRIHIS", "PROCST", "PRODAT", "PRODEX", "PROINQ", "PROSRV", "PROTAP", "PRPAID", "QALITY", "QUOTES", "RDRMES", "REBORD", "RECADV", "RECALC", "RECECO", "RECLAM", "RECORD", "REGENT", "RELIST", "REMADV", "REPREM", "REQDOC", "REQOTE", "RESETT", "RESMSG", "RESREQ", "RESRSP", "RETACC", "RETANN", "RETINS", "RPCALL", "SAFHAZ", "SANCRT", "SKDREQ", "SKDUPD", "SLSFCT", "SLSRPT", "SOCADE", "SSIMOD", "SSRECH", "SSREGW", "STATAC", "STLRPT", "SUPCOT", "SUPMAN", "SUPRES", "TANSTA", "TAXCON", "TIQREQ", "TIQRSP", "TPFREP", "TSDUPD", "TUPREQ", "TUPRSP", "UTILMD", "UTILTS", "VATDEC", "VESDEP", "WASDIS", "WKGRDC", "WKGRRE"]
-documents += ["AVIEXP", "MEDREF", "PNRGOV", "LIMCLM", "FHSREG", "FSPREQ"] # Non EDIFACT
+edifact_documents = ["APERAK", "AUTACK", "AUTHOR", "AVLREQ", "AVLRSP", "BALANC", "BANSTA", "BAPLIE", "BAPLTE", "BERMAN", "BMISRM", "BOPBNK", "BOPCUS", "BOPDIR", "BOPINF", "BUSCRD", "CALINF", "CASINT", "CASRES", "CHACCO", "CLASET", "CNTCND", "COACSU", "COARRI", "CODECO", "CODENO", "COEDOR", "COHAOR", "COLREQ", "COMDIS", "CONAPW", "CONDPV", "CONDRA", "CONDRO", "CONEST", "CONITT", "CONPVA", "CONQVA", "CONRPW", "CONTEN", "CONTRL", "CONWQD", "COPARN", "COPAYM", "COPINO", "COPRAR", "COREOR", "COSTCO", "COSTOR", "CREADV", "CREEXT", "CREMUL", "CUSCAR", "CUSDEC", "CUSEXP", "CUSPED", "CUSREP", "CUSRES", "DEBADV", "DEBMUL", "DEBREC", "DELFOR", "DELJIT", "DESADV", "DESTIM", "DGRECA", "DIRDEB", "DIRDEF", "DMRDEF", "DMSTAT", "DOCADV", "DOCAMA", "DOCAMI", "DOCAMR", "DOCAPP", "DOCARE", "DOCINF", "ENTREC", "FINCAN", "FINPAY", "FINSTA", "GENRAL", "GESMES", "HANMOV", "ICASRP", "ICSOLI", "IFCSUM", "IFTCCA", "IFTDGN", "IFTFCC", "IFTIAG", "IFTICL", "IFTMAN", "IFTMBC", "IFTMBF", "IFTMBP", "IFTMCA", "IFTMCS", "IFTMFR", "IFTMIN", "IFTRIN", "IFTSAI", "IFTSTA", "IFTSTQ", "IHCEBI", "IHCLME", "IMPDEF", "INFCON", "INFENT", "INSDES", "INSPRE", "INSREQ", "INSRPT", "INTCHG", "INVOIC", "INVRPT", "IPPOAD", "IPPOMO", "ISENDS", "ITRRPT", "JAPRES", "JINFDE", "JOBAPP", "JOBCON", "JOBMOD", "JOBOFF", "JUPREQ", "LEDGER", "LREACT", "LRECLM", "MEDPID", "MEDPRE", "MEDREQ", "MEDRPT", "MEDRUC", "MEQPOS", "MOVINS", "MSCONS", "ORDCHG", "ORDERS", "ORDRSP", "OSTENQ", "OSTRPT", "PARTIN", "PASREQ", "PASRSP", "PAXLST", "PAYDUC", "PAYEXT", "PAYMUL", "PAYORD", "PRICAT", "PRIHIS", "PROCST", "PRODAT", "PRODEX", "PROINQ", "PROSRV", "PROTAP", "PRPAID", "QALITY", "QUOTES", "RDRMES", "REBORD", "RECADV", "RECALC", "RECECO", "RECLAM", "RECORD", "REGENT", "RELIST", "REMADV", "REPREM", "REQDOC", "REQOTE", "RESETT", "RESMSG", "RESREQ", "RESRSP", "RETACC", "RETANN", "RETINS", "RPCALL", "SAFHAZ", "SANCRT", "SKDREQ", "SKDUPD", "SLSFCT", "SLSRPT", "SOCADE", "SSIMOD", "SSRECH", "SSREGW", "STATAC", "STLRPT", "SUPCOT", "SUPMAN", "SUPRES", "TANSTA", "TAXCON", "TIQREQ", "TIQRSP", "TPFREP", "TSDUPD", "TUPREQ", "TUPRSP", "UTILMD", "UTILTS", "VATDEC", "VESDEP", "WASDIS", "WKGRDC", "WKGRRE"]
+non_edifact_documents = ["AVIEXP", "MEDREF", "PNRGOV", "LIMCLM", "FHSREG", "FSPREQ", "IFTERA"]
 doc_comments = {
     "APERAK" => ["APERAK = Application Error And Acknowledgement"],
     "AUTACK" => ["AUTACK = Secure Authentication And Acknowledgement Message"],
@@ -216,14 +216,15 @@ doc_comments = {
     "WKGRRE" => ["WKGRRE = Work Grant Request Message"],    
     "AVIEXP" => ["This document is part of the ODETTE standard."],
     "MEDREF" => ["This document is part of the MedCom standard."],
-    "PNRGOV" => ["This document is part of the IATA PADIS standard."],
+    "PNRGOV" => ["This document is part of the IATA PADIS standard.", "PNRGOV = Passenger Name Record"],
     "LIMCLM" => ["This document is part of the London Market standard."],
     "FHSREG" => ["This document is part of the NHAIS standard."],
+    "IFTERA" => ["This document is part of the 1-stop standard.", "IFTERA = Export Receival Advice"], # Pre Receival Advices 
 }
 
 doc_image = []
-documents.each_slice(6).to_a.each do |slice|
-    doc_image << slice.map { |m| "[ ] #{m}" }.join("  ").ljust(70, " ")
+(edifact_documents + non_edifact_documents).each_slice(6).to_a.each do |slice|
+    doc_image << slice.map { |m| "[ ] #{m}" }.join("  ")
 end
 
 data = {}
@@ -253,7 +254,7 @@ page.text(2, top, "File naming convention: <document>_<version>_<source>_<ref:op
 page.replace("<", "&lt;")
 page.replace(">", "&gt;")
 
-page.image(4, 15, ["ELECTRONIC DATA INTERCHANGE", "      EDIFACT SAMPLES      "])
+page.image(4, 15, ["ELECTRONIC DATA INTERCHANGE", "      EDIFACT SAMPLES"])
 caption = "For use of reference and testing, I am collating sample EDI messages and any"
 page.text(2, 18, caption); page.italify(caption)
 caption = "corresponding documentation that is available online. Some files are not entire"
