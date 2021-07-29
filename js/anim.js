@@ -6,7 +6,7 @@ var partition = 0;
 const str_width = 82;
 
 function preload() {
-    quotes = loadStrings('../quotes.txt');
+    quotes = loadStrings('../motd.txt');
 }
 
 function setup() {

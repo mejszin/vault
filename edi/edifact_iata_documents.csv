@@ -1,0 +1,73 @@
+EDIFACT/IATA,ACKRES,Acknowledgement Response 
+EDIFACT/IATA,APSINQ,Application/Product Status Inquiry 
+EDIFACT/IATA,APSRES,Application/Product Status Response 
+EDIFACT/IATA,ASQSRM,Airport Resource Management Query/Flight Report 
+EDIFACT/IATA,ASRSRM,Airport Resource Response 
+EDIFACT/IATA,CLTREQ,Clear/Terminate Request  
+EDIFACT/IATA,CLTRES,Clear/Terminate Response  
+EDIFACT/IATA,CURREQ,Currency Information Request 
+EDIFACT/IATA,CURRES,Currency Information Response 
+EDIFACT/IATA,DBQBSM,Baggage Source 
+EDIFACT/IATA,DBQBTM,Baggage Transfer 
+EDIFACT/IATA,DBQPUM,Baggage Process and Unload 
+EDIFACT/IATA,DCQBPR,Boarding Pass Reprint Request  
+EDIFACT/IATA,DCQCKF,Flight Check-in Update Request  
+EDIFACT/IATA,DCQCKI,Through Check-In Request  
+EDIFACT/IATA,DCQCKU,Through Check-In Update Request  
+EDIFACT/IATA,DCQCKX,Through Check-In Cancel Request  
+EDIFACT/IATA,DCQFMI,Flight Management Request 
+EDIFACT/IATA,DCQLCI,Local Check-in Request  
+EDIFACT/IATA,DCQPLF,Passenger List Function Request  
+EDIFACT/IATA,DCQRCM,Flight Reaccommodation 
+EDIFACT/IATA,DCQSMF,Seat Map Function Request  
+EDIFACT/IATA,DCRCKA,Through Check-In Response 
+EDIFACT/IATA,DCRFMI,Flight Management Response 
+EDIFACT/IATA,DCRLCI,Local Check-in Response  
+EDIFACT/IATA,DCRSMF,Seat Map Function Response  
+EDIFACT/IATA,DWQDLI,Deadload Information 
+EDIFACT/IATA,DWRDLI,Deadload Response 
+EDIFACT/IATA,EBIREQ,Excess Baggage Information Request 
+EDIFACT/IATA,EBIRES,Excess Baggage Information Response 
+EDIFACT/IATA,FARREQ,Fares Display Request 
+EDIFACT/IATA,FARRES,Fares Display Response 
+EDIFACT/IATA,FLIREQ,Flight Information Request 
+EDIFACT/IATA,FLIRES,Flight Information Response 
+EDIFACT/IATA,FTAREQ,Frequent Traveller Account Information/Enrollment Request 
+EDIFACT/IATA,FTARES,Frequent Traveller Account Information/Enrollment Response 
+EDIFACT/IATA,FTVREQ,Frequent Traveller Verification Request 
+EDIFACT/IATA,FTVRES,Frequent Traveller Verification Response 
+EDIFACT/IATA,HSFREQ,Hybrid Screen Format Request 
+EDIFACT/IATA,HSFRES,Hybrid Screen Format Response 
+EDIFACT/IATA,HWPREQ,Hybrid Wrap-up Request  
+EDIFACT/IATA,HWPRES,Hybrid Wrap-up Response  
+EDIFACT/IATA,INVOIC,Invoice 
+EDIFACT/IATA,ITAREQ,Inventory Adjustment Request  
+EDIFACT/IATA,ITARES,Inventory Adjustment Response  
+EDIFACT/IATA,ITPREQ,Itinerary Pricing Request 
+EDIFACT/IATA,ITPRES,Itinerary Pricing Response 
+EDIFACT/IATA,NMEREQ,Passenger Name Update Request  
+EDIFACT/IATA,NMERES,Passenger Name Update Response  
+EDIFACT/IATA,PAOREQ,Product Availability Offering Request 
+EDIFACT/IATA,PAORES,Product availability Offering Response  
+EDIFACT/IATA,PNREXC,PNR Data Exchange 
+EDIFACT/IATA,PNRREQ,PNR Data Request 
+EDIFACT/IATA,QUEREQ,Queue Request 
+EDIFACT/IATA,QUERES,Queue Response 
+EDIFACT/IATA,SBPREQ,Advance Seat Assignment and Boarding Pass Request  
+EDIFACT/IATA,SBPRES,Advance Seat Assignment and Boarding Pass Response 
+EDIFACT/IATA,SKDSLT,Airport Clearance/Movement Advice 
+EDIFACT/IATA,SMPREQ,Seat Map Request  
+EDIFACT/IATA,SMPRES,Seat Map Response  
+EDIFACT/IATA,SPORES,Specific Product Offering Response  
+EDIFACT/IATA,SQCACK,Selective Query Control Acknowledgement 
+EDIFACT/IATA,SQCADV,Selective Query Control Advice 
+EDIFACT/IATA,SSRREQ,Special Services Request  
+EDIFACT/IATA,SSRRES,Special Services Response  
+EDIFACT/IATA,TKCREQ,Ticketing Control Request 
+EDIFACT/IATA,TKCRES,Ticketing Control Response 
+EDIFACT/IATA,TKCUAC,Ticketing Unsolicited Airport Control Request 
+EDIFACT/IATA,TKTREQ,Ticketing Request 
+EDIFACT/IATA,TKTRES,Ticketing Response 
+EDIFACT/IATA,TNLRES,Traveller Name List Response 
+EDIFACT/IATA,WRPREQ,Wrap-up Request  
+EDIFACT/IATA,WRPRES,Wrap-up Response 
