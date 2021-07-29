@@ -1,4 +1,4 @@
-require './builder.rb'
+require_relative './builder.rb'
 
 page = Builder.new(:motd => true)
 page.box(0, 13, PAGE_WIDTH - 1, 22)
@@ -22,5 +22,4 @@ page.row(32, ["3.1", "Introducing the Median EDI client"], ["01/06/2021"])
 page.linkify("Intro ", "./intro.html")
 page.linkify("About mdev", "./mdev.html")
 # Save
-page.debug
 page.save

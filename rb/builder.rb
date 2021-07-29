@@ -110,6 +110,7 @@ class Builder
     def save(path = "../build.html")
         page = @head + @body.join("\n") + @tail
         File.write(path, page)
+        puts "** Page updated @ #{path}"
     end
 
     def debug
