@@ -222,10 +222,14 @@ doc_comments = {
     "IFTERA" => ["This document is part of the 1-stop standard.", "IFTERA = Export Receival Advice"], # Pre Receival Advices 
 }
 
+# Create document name grid
+
 doc_image = []
 (edifact_documents + non_edifact_documents).each_slice(6).to_a.each do |slice|
     doc_image << slice.map { |m| "[ ] #{m}" }.join("  ")
 end
+
+# Get samples
 
 data = {}
 for path in Dir["./edi/samples/*.edi"] do
@@ -246,6 +250,8 @@ for path in Dir["./edi/samples/*.edi"] do
     end
 end
 
+# Create page
+
 page = Builder.new(:css => "../css/style.css")
 page.signature
 
@@ -264,6 +270,7 @@ page.text(2, 20, caption); page.italify(caption)
 page.image(2, 22, doc_image)
 
 # Table
+
 data.each do |message, versions|
     page.replace("[ ] #{message}", "[X] #{message}")
     page.linkify(" #{message}", "\##{message}")
@@ -283,4 +290,5 @@ data.each do |message, versions|
 end
 
 # Save
+
 page.save("./edi/samples.html")
