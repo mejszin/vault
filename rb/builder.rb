@@ -107,10 +107,14 @@ class Builder
         @body.each { |row| row.gsub!(text, italics) }
     end
 
-    def save(path = "../build.html")
+    def save(path = "./build.html")
         page = @head + @body.join("\n") + @tail
-        File.write(path, page)
-        puts "** Page updated @ #{path}"
+        begin
+            File.write(path, page)
+            puts "** Page updated @ #{path}"
+        rescue => exception
+            puts "** #{exception.message}"
+        end
     end
 
     def debug

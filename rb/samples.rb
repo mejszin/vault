@@ -1,7 +1,5 @@
-require_relative './builder.rb'
-
 documents = ["APERAK", "AUTACK", "AUTHOR", "AVLREQ", "AVLRSP", "BALANC", "BANSTA", "BAPLIE", "BAPLTE", "BERMAN", "BMISRM", "BOPBNK", "BOPCUS", "BOPDIR", "BOPINF", "BUSCRD", "CALINF", "CASINT", "CASRES", "CHACCO", "CLASET", "CNTCND", "COACSU", "COARRI", "CODECO", "CODENO", "COEDOR", "COHAOR", "COLREQ", "COMDIS", "CONAPW", "CONDPV", "CONDRA", "CONDRO", "CONEST", "CONITT", "CONPVA", "CONQVA", "CONRPW", "CONTEN", "CONTRL", "CONWQD", "COPARN", "COPAYM", "COPINO", "COPRAR", "COREOR", "COSTCO", "COSTOR", "CREADV", "CREEXT", "CREMUL", "CUSCAR", "CUSDEC", "CUSEXP", "CUSPED", "CUSREP", "CUSRES", "DEBADV", "DEBMUL", "DEBREC", "DELFOR", "DELJIT", "DESADV", "DESTIM", "DGRECA", "DIRDEB", "DIRDEF", "DMRDEF", "DMSTAT", "DOCADV", "DOCAMA", "DOCAMI", "DOCAMR", "DOCAPP", "DOCARE", "DOCINF", "ENTREC", "FINCAN", "FINPAY", "FINSTA", "GENRAL", "GESMES", "HANMOV", "ICASRP", "ICSOLI", "IFCSUM", "IFTCCA", "IFTDGN", "IFTFCC", "IFTIAG", "IFTICL", "IFTMAN", "IFTMBC", "IFTMBF", "IFTMBP", "IFTMCA", "IFTMCS", "IFTMFR", "IFTMIN", "IFTRIN", "IFTSAI", "IFTSTA", "IFTSTQ", "IHCEBI", "IHCLME", "IMPDEF", "INFCON", "INFENT", "INSDES", "INSPRE", "INSREQ", "INSRPT", "INTCHG", "INVOIC", "INVRPT", "IPPOAD", "IPPOMO", "ISENDS", "ITRRPT", "JAPRES", "JINFDE", "JOBAPP", "JOBCON", "JOBMOD", "JOBOFF", "JUPREQ", "LEDGER", "LREACT", "LRECLM", "MEDPID", "MEDPRE", "MEDREQ", "MEDRPT", "MEDRUC", "MEQPOS", "MOVINS", "MSCONS", "ORDCHG", "ORDERS", "ORDRSP", "OSTENQ", "OSTRPT", "PARTIN", "PASREQ", "PASRSP", "PAXLST", "PAYDUC", "PAYEXT", "PAYMUL", "PAYORD", "PRICAT", "PRIHIS", "PROCST", "PRODAT", "PRODEX", "PROINQ", "PROSRV", "PROTAP", "PRPAID", "QALITY", "QUOTES", "RDRMES", "REBORD", "RECADV", "RECALC", "RECECO", "RECLAM", "RECORD", "REGENT", "RELIST", "REMADV", "REPREM", "REQDOC", "REQOTE", "RESETT", "RESMSG", "RESREQ", "RESRSP", "RETACC", "RETANN", "RETINS", "RPCALL", "SAFHAZ", "SANCRT", "SKDREQ", "SKDUPD", "SLSFCT", "SLSRPT", "SOCADE", "SSIMOD", "SSRECH", "SSREGW", "STATAC", "STLRPT", "SUPCOT", "SUPMAN", "SUPRES", "TANSTA", "TAXCON", "TIQREQ", "TIQRSP", "TPFREP", "TSDUPD", "TUPREQ", "TUPRSP", "UTILMD", "UTILTS", "VATDEC", "VESDEP", "WASDIS", "WKGRDC", "WKGRRE"]
-documents += ["AVIEXP", "MEDREF", "PNRGOV", "LIMCLM"] # Non EDIFACT
+documents += ["AVIEXP", "MEDREF", "PNRGOV", "LIMCLM", "FHSREG", "FSPREQ"] # Non EDIFACT
 doc_comments = {
     "APERAK" => ["APERAK = Application Error And Acknowledgement"],
     "AUTACK" => ["AUTACK = Secure Authentication And Acknowledgement Message"],
@@ -220,6 +218,7 @@ doc_comments = {
     "MEDREF" => ["This document is part of the MedCom standard."],
     "PNRGOV" => ["This document is part of the IATA PADIS standard."],
     "LIMCLM" => ["This document is part of the London Market standard."],
+    "FHSREG" => ["This document is part of the NHAIS standard."],
 }
 
 doc_image = []
@@ -228,7 +227,7 @@ documents.each_slice(6).to_a.each do |slice|
 end
 
 data = {}
-for path in Dir["../edi/samples/*.edi"] do
+for path in Dir["./edi/samples/*.edi"] do
     file_name = File.basename(path)
     message = file_name.split("_")[0]
     version = file_name.split("_")[1]
@@ -283,4 +282,4 @@ data.each do |message, versions|
 end
 
 # Save
-page.save("../edi/samples.html")
+page.save("./edi/samples.html")

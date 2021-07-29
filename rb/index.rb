@@ -1,5 +1,3 @@
-require_relative './builder.rb'
-
 page = Builder.new(:motd => true)
 page.box(0, 13, PAGE_WIDTH - 1, 22)
 page.signature
