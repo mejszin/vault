@@ -1,6 +1,6 @@
 lines = []
-lines += File.readlines("edifact_documents_0.csv")
-lines += File.readlines("edifact_documents_1.csv")
+
+Dir["./edifact_documents_*.csv"].each { |path| lines += File.readlines(path) }
 
 data = {}
 

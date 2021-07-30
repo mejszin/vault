@@ -1,10 +1,17 @@
-edifact_documents = ["APERAK", "AUTACK", "AUTHOR", "AVLREQ", "AVLRSP", "BALANC", "BANSTA", "BAPLIE", "BAPLTE", "BERMAN", "BMISRM", "BOPBNK", "BOPCUS", "BOPDIR", "BOPINF", "BUSCRD", "CALINF", "CASINT", "CASRES", "CHACCO", "CLASET", "CNTCND", "COACSU", "COARRI", "CODECO", "CODENO", "COEDOR", "COHAOR", "COLREQ", "COMDIS", "CONAPW", "CONDPV", "CONDRA", "CONDRO", "CONEST", "CONITT", "CONPVA", "CONQVA", "CONRPW", "CONTEN", "CONTRL", "CONWQD", "COPARN", "COPAYM", "COPINO", "COPRAR", "COREOR", "COSTCO", "COSTOR", "CREADV", "CREEXT", "CREMUL", "CUSCAR", "CUSDEC", "CUSEXP", "CUSPED", "CUSREP", "CUSRES", "DEBADV", "DEBMUL", "DEBREC", "DELFOR", "DELJIT", "DESADV", "DESTIM", "DGRECA", "DIRDEB", "DIRDEF", "DMRDEF", "DMSTAT", "DOCADV", "DOCAMA", "DOCAMI", "DOCAMR", "DOCAPP", "DOCARE", "DOCINF", "ENTREC", "FINCAN", "FINPAY", "FINSTA", "GENRAL", "GESMES", "HANMOV", "ICASRP", "ICSOLI", "IFCSUM", "IFTCCA", "IFTDGN", "IFTFCC", "IFTIAG", "IFTICL", "IFTMAN", "IFTMBC", "IFTMBF", "IFTMBP", "IFTMCA", "IFTMCS", "IFTMFR", "IFTMIN", "IFTRIN", "IFTSAI", "IFTSTA", "IFTSTQ", "IHCEBI", "IHCLME", "IMPDEF", "INFCON", "INFENT", "INSDES", "INSPRE", "INSREQ", "INSRPT", "INTCHG", "INVOIC", "INVRPT", "IPPOAD", "IPPOMO", "ISENDS", "ITRRPT", "JAPRES", "JINFDE", "JOBAPP", "JOBCON", "JOBMOD", "JOBOFF", "JUPREQ", "LEDGER", "LREACT", "LRECLM", "MEDPID", "MEDPRE", "MEDREQ", "MEDRPT", "MEDRUC", "MEQPOS", "MOVINS", "MSCONS", "ORDCHG", "ORDERS", "ORDRSP", "OSTENQ", "OSTRPT", "PARTIN", "PASREQ", "PASRSP", "PAXLST", "PAYDUC", "PAYEXT", "PAYMUL", "PAYORD", "PRICAT", "PRIHIS", "PROCST", "PRODAT", "PRODEX", "PROINQ", "PROSRV", "PROTAP", "PRPAID", "QALITY", "QUOTES", "RDRMES", "REBORD", "RECADV", "RECALC", "RECECO", "RECLAM", "RECORD", "REGENT", "RELIST", "REMADV", "REPREM", "REQDOC", "REQOTE", "RESETT", "RESMSG", "RESREQ", "RESRSP", "RETACC", "RETANN", "RETINS", "RPCALL", "SAFHAZ", "SANCRT", "SKDREQ", "SKDUPD", "SLSFCT", "SLSRPT", "SOCADE", "SSIMOD", "SSRECH", "SSREGW", "STATAC", "STLRPT", "SUPCOT", "SUPMAN", "SUPRES", "TANSTA", "TAXCON", "TIQREQ", "TIQRSP", "TPFREP", "TSDUPD", "TUPREQ", "TUPRSP", "UTILMD", "UTILTS", "VATDEC", "VESDEP", "WASDIS", "WKGRDC", "WKGRRE"]
-non_edifact_documents = ["AVIEXP", "MEDREF", "PNRGOV", "LIMCLM", "FHSREG", "FSPREQ", "IFTERA"]
+edifact_documents = ["APERAK", "AUTACK", "AUTHOR", "AVLREQ", "AVLRSP", "BALANC", "BANSTA", "BAPLIE", "BAPLTE", "BERMAN", "BMISRM", "BOPBNK", "BOPCUS", "BOPDIR", "BOPINF", "BUSCRD", "CALINF", "CASINT", "CASRES", "CHACCO", "CLASET", "CNTCND", "COACSU", "COARRI", "CODECO", "CODENO", "COEDOR", "COHAOR", "COLREQ", "COMDIS", "CONAPW", "CONDPV", "CONDRA", "CONDRO", "CONEST", "CONITT", "CONPVA", "CONQVA", "CONRPW", "CONTEN", "CONTRL", "CONWQD", "COPARN", "COPAYM", "COPINO", "COPRAR", "COREOR", "COSTCO", "COSTOR", "CREADV", "CREEXT", "CREMUL", "CUSCAR", "CUSDEC", "CUSEXP", "CUSPED", "CUSREP", "CUSRES", "DAPLOS", "DEBADV", "DEBMUL", "DEBREC", "DELFOR", "DELJIT", "DESADV", "DESTIM", "DGRECA", "DIRDEB", "DIRDEF", "DMRDEF", "DMSTAT", "DOCADV", "DOCAMA", "DOCAMI", "DOCAMR", "DOCAPP", "DOCARE", "DOCINF", "ENTREC", "FINCAN", "FINPAY", "FINSTA", "GENRAL", "GESMES", "GOVCBR", "HANMOV", "ICASRP", "ICSOLI", "IFCSUM", "IFTCCA", "IFTDGN", "IFTFCC", "IFTIAG", "IFTICL", "IFTMAN", "IFTMBC", "IFTMBF", "IFTMBP", "IFTMCA", "IFTMCS", "IFTMFR", "IFTMIN", "IFTRIN", "IFTSAI", "IFTSTA", "IFTSTQ", "IHCEBI", "IHCLME", "IMPDEF", "INFCON", "INFENT", "INSDES", "INSPRE", "INSREQ", "INSRPT", "INTCHG", "INVOIC", "INVRPT", "IPPOAD", "IPPOMO", "ISENDS", "ITRRPT", "JAPRES", "JINFDE", "JOBAPP", "JOBCON", "JOBMOD", "JOBOFF", "JUPREQ", "LEDGER", "LREACT", "LRECLM", "MEDPID", "MEDPRE", "MEDREQ", "MEDRPT", "MEDRUC", "MEQPOS", "MOVINS", "MSCONS", "ORDCHG", "ORDERS", "ORDRSP", "OSTENQ", "OSTRPT", "PARTIN", "PASREQ", "PASRSP", "PAXLST", "PAYDUC", "PAYEXT", "PAYMUL", "PAYORD", "PRICAT", "PRIHIS", "PROCST", "PRODAT", "PRODEX", "PROINQ", "PROSRV", "PROTAP", "PRPAID", "QALITY", "QUOTES", "RDRMES", "REBORD", "RECADV", "RECALC", "RECECO", "RECLAM", "RECORD", "REGENT", "RELIST", "REMADV", "REPREM", "REQDOC", "REQOTE", "RESETT", "RESMSG", "RESREQ", "RESRSP", "RETACC", "RETANN", "RETINS", "RPCALL", "SAFHAZ", "SANCRT", "SKDREQ", "SKDUPD", "SLSFCT", "SLSRPT", "SOCADE", "SSIMOD", "SSRECH", "SSREGW", "STATAC", "STLRPT", "SUPCOT", "SUPMAN", "SUPRES", "TANSTA", "TAXCON", "TIQREQ", "TIQRSP", "TPFREP", "TSDUPD", "TUPREQ", "TUPRSP", "UTILMD", "UTILTS", "VATDEC", "VERMAS", "VESDEP", "WASDIS", "WKGRDC", "WKGRRE"]
+non_edifact_documents = ["AVIEXP", "MEDREF", "PNRGOV", "LIMCLM", "FHSREG", "FSPREQ", "IFTERA", "MEDDIS"]
 
 edifact_documents.sort! { |a, b| a <=> b }
 non_edifact_documents.sort! { |a, b| a <=> b }
 
 doc_comments = {
+    "AVIEXP" => ["This document is part of the ODETTE standard."],
+    "MEDREF" => ["This document is part of the MedCom standard."],
+    "MEDDIS" => ["This document is part of the MedCom standard."],
+    "PNRGOV" => ["This document is part of the IATA PADIS standard.", "PNRGOV = Passenger Name Record"],
+    "LIMCLM" => ["This document is part of the London Market standard."],
+    "FHSREG" => ["This document is part of the NHAIS standard."],
+    "IFTERA" => ["This document is part of the 1-stop standard.", "IFTERA = Export Receival Advice"], # Pre Receival Advices 
     "APERAK" => ["APERAK = Application Error And Acknowledgement"],
     "AUTACK" => ["AUTACK = Secure Authentication And Acknowledgement Message"],
     "AUTHOR" => ["AUTHOR = Authorization Message"],
@@ -63,6 +70,7 @@ doc_comments = {
     "CUSPED" => ["CUSPED = Periodic Customs Declaration"],
     "CUSREP" => ["CUSREP = Customs Conveyance Report Message"],
     "CUSRES" => ["CUSRES = Customs Response Message"],
+    "DAPLOS" => ["DAPLOS = Data Plot Sheet"],
     "DEBADV" => ["DEBADV = Debit Advice Message"],
     "DEBMUL" => ["DEBMUL = Multiple Debit Advice"],
     "DEBREC" => ["DEBREC = Debts recovery message"],
@@ -88,6 +96,7 @@ doc_comments = {
     "FINSTA" => ["FINSTA = Financial Statement Of An Account"],
     "GENRAL" => ["GENRAL = General Purpose"],
     "GESMES" => ["GESMES = Generic statistical message"],
+    "GOVCBR" => ["GOVCBR = Government Cross Border Regulatory message"],
     "HANMOV" => ["HANMOV = Cargo/Goods Handling And Movement"],
     "ICASRP" => ["ICASRP = Insurance claim assessment and reporting message"],
     "ICSOLI" => ["ICSOLI = Insurance claim solicitor’s instruction message"],
@@ -214,23 +223,23 @@ doc_comments = {
     "UTILMD" => ["UTILMD = Utilities master data message"],
     "UTILTS" => ["UTILTS = Utilities time series message"],
     "VATDEC" => ["VATDEC = Value Added Tax"],
+    "VERMAS" => ["VERMAS = Verified gross mass message"],
     "VESDEP" => ["VESDEP = Vessel Departure"],
     "WASDIS" => ["WASDIS = Waste Disposal Information"],
     "WKGRDC" => ["WKGRDC = Work Grant Decision Message"],
-    "WKGRRE" => ["WKGRRE = Work Grant Request Message"],    
-    "AVIEXP" => ["This document is part of the ODETTE standard."],
-    "MEDREF" => ["This document is part of the MedCom standard."],
-    "PNRGOV" => ["This document is part of the IATA PADIS standard.", "PNRGOV = Passenger Name Record"],
-    "LIMCLM" => ["This document is part of the London Market standard."],
-    "FHSREG" => ["This document is part of the NHAIS standard."],
-    "IFTERA" => ["This document is part of the 1-stop standard.", "IFTERA = Export Receival Advice"], # Pre Receival Advices 
+    "WKGRRE" => ["WKGRRE = Work Grant Request Message"],
 }
 
 # Create document name grid
 
+# doc_image = []
+# (edifact_documents + non_edifact_documents).each_slice(6).to_a.each do |slice|
+#     doc_image << slice.map { |m| "[ ] #{m}" }.join("  ")
+# end
+
 doc_image = []
-(edifact_documents + non_edifact_documents).each_slice(6).to_a.each do |slice|
-    doc_image << slice.map { |m| "[ ] #{m}" }.join("  ")
+(edifact_documents + non_edifact_documents).each_slice(10).to_a.each do |slice|
+    doc_image << slice.map { |m| "#{m}" }.join(" ")
 end
 
 # Get samples
@@ -260,7 +269,7 @@ page = Builder.new(:css => "../css/style.css")
 page.signature
 
 top = 23 + doc_image.length
-page.text(2, top, "File naming convention: <document>_<version>_<source>_<ref:optional>.edi")
+page.text(2, top, "File naming convention: <document>_<version>_<meta>.edi")
 page.replace("<", "&lt;")
 page.replace(">", "&gt;")
 
@@ -271,12 +280,12 @@ caption = "corresponding documentation that is available online. Some files are 
 page.text(2, 19, caption); page.italify(caption)
 caption = "valid messages but smaller examples of use cases."
 page.text(2, 20, caption); page.italify(caption)
-page.image(2, 22, doc_image)
+page.image(4, 22, doc_image)
 
 # Table
 
 data.each do |message, versions|
-    page.replace("[ ] #{message}", "[X] #{message}")
+    #page.replace("[ ] #{message}", "[X] #{message}")
     page.linkify(" #{message}", "\##{message}")
     page.partition(top += 2, message)
     top += 1

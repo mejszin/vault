@@ -56,6 +56,7 @@ UN/EDIFACT,CUSEXP,Customs Express Consignment Declaration
 UN/EDIFACT,CUSPED,Periodic Customs Declaration
 UN/EDIFACT,CUSREP,Customs Conveyance Report Message
 UN/EDIFACT,CUSRES,Customs Response Message
+UN/EDIFACT,DAPLOS,Data Plot Sheet
 UN/EDIFACT,DEBADV,Debit Advice Message
 UN/EDIFACT,DEBMUL,Multiple Debit Advice
 UN/EDIFACT,DEBREC,Debts recovery message
@@ -81,6 +82,7 @@ UN/EDIFACT,FINPAY,Multiple interbank funds transfer message
 UN/EDIFACT,FINSTA,Financial Statement Of An Account
 UN/EDIFACT,GENRAL,General Purpose
 UN/EDIFACT,GESMES,Generic statistical message
+UN/EDIFACT,GOVCBR,Government Cross Border Regulatory message
 UN/EDIFACT,HANMOV,Cargo/Goods Handling And Movement
 UN/EDIFACT,ICASRP,Insurance claim assessment and reporting message
 UN/EDIFACT,ICSOLI,Insurance claim solicitor’s instruction message
@@ -207,6 +209,7 @@ UN/EDIFACT,TUPRSP,Travel
 UN/EDIFACT,UTILMD,Utilities master data message
 UN/EDIFACT,UTILTS,Utilities time series message
 UN/EDIFACT,VATDEC,Value Added Tax
+UN/EDIFACT,VERMAS,Verified gross mass message
 UN/EDIFACT,VESDEP,Vessel Departure
 UN/EDIFACT,WASDIS,Waste Disposal Information
 UN/EDIFACT,WKGRDC,Work Grant Decision Message
