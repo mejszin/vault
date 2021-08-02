@@ -53,7 +53,7 @@ doc_comments = {
     "CONQVA" => ["CONQVA = Quantity Valuation Message"],
     "CONRPW" => ["CONRPW = Response Of Pending Works"],
     "CONTEN" => ["CONTEN = Tender Message"],
-    "CONTRL" => ["CONTRL = Edifact Control Message (Vers 2"],
+    "CONTRL" => ["CONTRL = Edifact Control Message"],
     "CONWQD" => ["CONWQD = Work Item Quantity Determination"],
     "COPARN" => ["COPARN = Container Announcement"],
     "COPAYM" => ["COPAYM = Contributions for payment"],
