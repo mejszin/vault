@@ -245,22 +245,30 @@ end
 
 # Get samples
 
+require 'uri'
+require 'net/http'
+
 data = {}
-for path in Dir["./edi/samples/*.edi"] do
-    file_name = File.basename(path)
-    message = file_name.split("_")[0]
-    version = file_name.split("_")[1]
-    date = File.mtime(path).strftime("%d/%m/%Y")
-    if data.key?(message)
-        if data[message].key?(version)
-            data[message][version] << [file_name, date]
+uri = URI('https://raw.githubusercontent.com/mejszin/edi-samples/main/files.csv')
+res = Net::HTTP.get_response(uri)
+if res.is_a?(Net::HTTPSuccess)
+    for line in res.body.split("\n") do
+        cells = line.chomp.split(",")
+        file_name = cells[0]
+        file_date = cells[1]
+        message = file_name.split("_")[0]
+        version = file_name.split("_")[1]
+        if data.key?(message)
+            if data[message].key?(version)
+                data[message][version] << [file_name, file_date]
+            else
+                data[message][version] = [[file_name, file_date]]
+            end
         else
-            data[message][version] = [[file_name, date]]
+            data[message] = {
+                version => [[file_name, file_date]]
+            }
         end
-    else
-        data[message] = {
-            version => [[file_name, date]]
-        }
     end
 end
 
@@ -296,9 +304,9 @@ data.each do |message, versions|
         top += 1 + doc_comments[message].length
     end
     versions.each do |version, messages|
-        messages.each do |file_name, date|
-            page.row(top += 1, ["Version #{version.ljust(4, " ")}", file_name], [date])
-            page.linkify(file_name, "../edi/samples/#{file_name}")
+        messages.each do |file_name, file_date|
+            page.row(top += 1, ["Version #{version.ljust(4, " ")}", file_name + ".edi"], [file_date])
+            page.linkify(file_name + ".edi", "https://raw.githubusercontent.com/mejszin/edi-samples/main/EDIFACT/#{file_name}.edi")
         end
     end
 end
