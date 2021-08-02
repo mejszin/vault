@@ -8,6 +8,7 @@ doc_comments = {
     "AVIEXP" => ["This document is part of the ODETTE standard."],
     "MEDREF" => ["This document is part of the MedCom standard."],
     "MEDDIS" => ["This document is part of the MedCom standard."],
+    "MEDBIN" => ["This document is part of the MedCom standard."],
     "PNRGOV" => ["This document is part of the IATA PADIS standard.", "PNRGOV = Passenger Name Record"],
     "LIMCLM" => ["This document is part of the London Market standard."],
     "FHSREG" => ["This document is part of the NHAIS standard."],
