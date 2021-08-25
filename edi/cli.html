@@ -1,53 +1,56 @@
 <html><head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>machin.dev</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-    </head>
-    <body>
-    <center><div style="display: inline-block; text-align: left;"><pre>
-                                                                ┌───────────────────────┐
-                                                                │                       │
-                                                                ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄       │
-                                                                █ █ █ █   █ █   █       │
-                                                                █ █ █ █▄▄▄█ █           │
-                                                                █   █ █   █ █▄▄▄▄       │
-                                                                │   ▄   ▄ ▄▄▄▄▄ ▄▄  ▄   │
-                                                                │   █   █   █   █ █ █   │
-                                                                │   █▄▄▄█   █   █  ██   │
-                                                                │   █   █ ▄▄█▄▄ █   █ ▄ │
-                                                                │       ▄▄▄▄  ▄▄▄▄▄ ▄   ▄
-                                                                │       █   █ █     █   █
-                                                                │       █   █ █▄▄▄▄  █ █│
-                                                                │       █▄▄▄█ █▄▄▄▄  █▄█│
-    EDI command-line interface                                  │                       │
-    ~ Mejszin                                                   └───────────────────────┘
-    
-    'edi-cli' is a tool for parsing, validation and manipulation of EDI (EDIFACT) 
-    messages. I am in the process of increasing thhe functionality and adding more unit 
-    tests to capture common issues.
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>machin.dev</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<center><div style="display: inline-block; text-align: left;"><pre>
+                                                            ┌───────────────────────┐
+                                                            │                       │
+                                                            ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄       │
+                                                            █ █ █ █   █ █   █       │
+                                                            █ █ █ █▄▄▄█ █           │
+                                                            █   █ █   █ █▄▄▄▄       │
+                                                            │   ▄   ▄ ▄▄▄▄▄ ▄▄  ▄   │
+                                                            │   █   █   █   █ █ █   │
+                                                            │   █▄▄▄█   █   █  ██   │
+                                                            │   █   █ ▄▄█▄▄ █   █ ▄ │
+                                                            │       ▄▄▄▄  ▄▄▄▄▄ ▄   ▄
+                                                            │       █   █ █     █   █
+                                                            │       █   █ █▄▄▄▄  █ █│
+                                                            │       █▄▄▄█ █▄▄▄▄  █▄█│
+EDI command-line interface                                  │                       │
+~ Mejszin                                                   └───────────────────────┘
 
-        Usage:
-         ./edi-cli.exe [options] [arguments]
-        
-        Arguments:
-         paths              One or more path to an EDI file
-        
-        Options:
-         -u  --unit         Parse and display unit test results
-         -d  --debug        Attempt to parse file and display cropped data
-         -s  --structure    Parse and display EDI document structure
-         -t  --timeline     Parse and display chronological information
-         -m  --median       HTML output compatible with Median EDI client
-    
-    This tool is used as the engine for my Median EDI client.
-    The project is open source and available on my GitHub.
-    
-    +----------- Socials -----------+
-    | github:   <a href="https://github.com/mejszin/edi-cli">mejszin/edi-cli</a>     |
-    +-------------------------------+
-    
-    
-    </pre></div></center>
-    
-    </body></html>
+'edi-cli' is a tool for parsing, validation and manipulation of EDI (EDIFACT) 
+messages. I am in the process of increasing thhe functionality and adding more unit 
+tests to capture common issues.
+
+    Usage:
+     ./edi-cli.exe [options] [arguments]
+
+    Arguments:
+     paths              One or more path to an EDI file
+
+    Options:
+     -u  --unit         Parse and display unit test results
+     -i  --info         Parse and display critical information
+     -p  --parse        Parse and display segment reference data
+     -d  --debug        Attempt to parse file and display cropped data
+     -s  --structure    Parse and display EDI document structure
+     -t  --timeline     Parse and display chronological information
+     -l  --headless     Continually read-in paths without terminal
+     -e  --edicate      HTML output compatible with Edicate EDI client
+
+This tool is used as the engine for my Edicate EDI client.
+The project is open source and available on my GitHub.
+
++----------- Socials -----------+
+| github:   <a href="https://github.com/mejszin/edi-cli">mejszin/edi-cli</a>     |
++-------------------------------+
+
+
+</pre></div></center>
+
+</body></html>
