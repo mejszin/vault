@@ -12,7 +12,7 @@ var milkbox_sketch = function(p) {
 
     p.setup = function() {
         p.noCanvas();
-        p.frameRate(4);
+        p.frameRate(2);
         // Assign DOM element
         p.pre = p.select('#milkbox');
         // Get quote phrase and pad
