@@ -3,11 +3,18 @@ var milkbox_sketch = function(p) {
     p.playing;
     p.split_string;
     p.partition = 0;
-    p.str_width = 56;
+    p.str_width = 83;
     
     p.preload = function() {
-        p.loadJSON('./api/getPlaying', data => { p.playing = data });
-        console.log(p.playing);
+        p.loadJSON('./api/getPlaying',
+            data => {
+                console.log(data);
+                p.playing = data;
+            },
+            error => {
+                console.log( error);
+            }
+        )
     }
 
     p.setup = function() {
@@ -30,9 +37,9 @@ var milkbox_sketch = function(p) {
             p.quote.substr(0, p.str_width - p.partition);
         // Construct ASCII output // ═=║ |-
         var inner = "";
-        inner += "▗" + ("╍").repeat(p.str_width) + "▖  │   █   █ ▄▄█▄▄ █   █ ▄ │\n";
-        inner += "┇ " + p.split_string + "┇  │       ▄▄▄▄  ▄▄▄▄▄ ▄   ▄\n";
-        inner += "▝" + ("╍").repeat(p.str_width) + "▘  │       █   █ █     █   █";
+        inner += "▗" + ("╍").repeat(p.str_width) + "▖\n";
+        inner += "┇ " + p.split_string + "┇            \n";
+        inner += "▝" + ("╍").repeat(p.str_width) + "▘";
         // Assign inner HTML to DOM element
         p.pre.html(inner);
         // Iterate partition index
