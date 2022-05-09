@@ -49,8 +49,3 @@ var milkbox_sketch = function(p) {
 }
 
 var milkbox_p5 = new p5(milkbox_sketch);
-
-
-// │       ▄▄▄▄  ▄▄▄▄▄ ▄   ▄
-// │       █   █ █     █   █
-// 
