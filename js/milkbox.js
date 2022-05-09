@@ -38,7 +38,7 @@ var milkbox_sketch = function(p) {
         // Construct ASCII output // ═=║ |-
         var inner = "";
         inner += "▗" + ("╍").repeat(p.str_width) + "▖\n";
-        inner += "┇ " + p.split_string + "┇            \n";
+        inner += "┇ " + p.split_string + "┇\n";
         inner += "▝" + ("╍").repeat(p.str_width) + "▘";
         // Assign inner HTML to DOM element
         p.pre.html(inner);
