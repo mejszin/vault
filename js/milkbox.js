@@ -6,7 +6,7 @@ var milkbox_sketch = function(p) {
     p.str_width = 56;
     
     p.preload = function() {
-        p.loadJSON('./api/metadata.json', data => { p.playing = data });
+        p.loadJSON('./api/getPlaying', data => { p.playing = data });
         console.log(p.playing);
     }
 
